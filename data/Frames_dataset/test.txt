@@ -1,0 +1,280 @@
+0
+user
+I'd like to book a trip to Atlantis from Caprica on Saturday, August 13, 2016 for 8 adults. I have a tight budget of 1700.
+>>>> inform_dst_city inform_or_city inform_str_date inform_n_adults inform_budget
+0
+wizard
+Hi...I checked a few options for you, and unfortunately, we do not currently have any trips that meet this criteria.  Would you like to book an alternate travel option?
+>>>> no_result sorry suggest_alternate
+0
+user
+Yes, how about going to Neverland from Caprica on August 13, 2016 for 5 adults. For this trip, my budget would be 1900.
+>>>> inform_dst_city inform_or_city inform_str_date inform_n_adults inform_budget
+0
+wizard
+I checked the availability for this date and there were no trips available.  Would you like to select some alternate dates?
+>>>> no_result suggest_alternate
+0
+user
+I have no flexibility for dates... but I can leave from Atlantis rather than Caprica. How about that?
+>>>> inform_dst_city inform_or_city
+0
+wizard
+I checked the availability for that date and there were no trips available.  Would you like to select some alternate dates?
+>>>> no_result suggest_dates
+0
+user
+I suppose I'll speak with my husband to see if we can choose other dates, and then I'll come back to you.Thanks for your help
+>>>> thanks
+1
+user
+Hello, I am looking to book a vacation from Gotham City to Mos Eisley for $2100.
+>>>> inform_dst_city inform_or_city inform_budget greeting
+1
+wizard
+Hi. Sorry, I can't find any trips from Gotham City to Mos Eisley for you.
+>>>> sorry no_result
+1
+user
+What about a trip from Gotham City to Neverland for the same budget?
+>>>> inform_dst_city inform_or_city inform_budget
+1
+wizard
+Sorry, I cannot find any trips leaving from Gotham City. Could you suggest another nearby departure city?
+>>>> sorry no_result suggest_dst_city
+1
+user
+Would any packages to Mos Eisley be available if I increase my budget to $2500?
+>>>> inform_dst_city inform_budget
+1
+wizard
+There are no trips available to Mos Eisley.
+>>>> no_result
+1
+user
+You know what, I'd like to try and visit Neverland
+>>>> inform_dst_city
+1
+wizard
+I cannot find any trips available to Neverland.
+>>>> no_result
+1
+user
+Do you have any trips from Gotham City to Kobe for my original budget of $2100?
+>>>> inform_dst_city inform_or_city inform_budget
+1
+wizard
+I can book you a 3 day trip to Kobe leaving from Sapporo, Japan. Is this ok?
+>>>> suggest_duration_time suggest_dst_city suggest_or_city
+1
+user
+No, that's too far for me. I need a flight that leaves from Birmingham.
+>>>> negate inform_or_city
+1
+wizard
+I can book you a trip from Birmingham to Kobe for 2747.8 USD.
+>>>> suggest_dst_city suggest_or_city suggest_budget
+1
+user
+How many days would I be in Kobe?
+>>>> request_dates
+1
+wizard
+You would arrive in Kobe August 17th and return to Birmingham on August 22nd.
+>>>> inform_dst_city inform_str_date inform_or_city inform_end_date
+1
+user
+What would the price be if I shortened my trip by one day?
+>>>> request_price inform_end_date
+1
+wizard
+I can not find any trips from Birmingham to Kobe for 4 days.
+>>>> no_result
+1
+user
+Ok, then I would like to purchase this package. What activities are included in this package?
+>>>> request_amenities
+1
+wizard
+There are no activities listed for this package. You will be staying at the Ivory Legacy Hotel for 7 days. This hotel has a 4.5 star rating and free wifi. Will I go ahead and book this package?
+>>>> suggest_book suggest_hotel_name suggest_duration_time suggest_hotel_category suggest_hotel_wifi
+1
+user
+Yes, I would like to book this package.
+>>>> affirm_book
+1
+wizard
+Great. Your flight departs from Birmingham at 9:00 am - Wednesday, August 17th 2016. Enjoy your trip, I have booked this package for you.
+>>>> action_book inform_str_date inform_or_city
+2
+user
+Hello there i am looking to go on a vacation with my family to Gotham City, can you help me?
+>>>> greeting inform_dst_city inform_n_adults
+2
+wizard
+when  would you like to travel and how many people will you be?
+>>>> request_n_adults request_str_date
+2
+user
+Not sure when we want to leave, but we are 12 kids and 5 adults
+>>>> inform_str_date inform_n_adults inform_n_kids
+2
+wizard
+do you have a budget?
+>>>> request_budget
+2
+user
+yes i do, it is around $2200
+>>>> inform_budget
+2
+wizard
+where will you be travelling from?
+>>>> request_or_city
+2
+user
+We are from Neverland
+>>>> inform_or_city
+2
+wizard
+We have nothing available leaving from Neverland, are you able to depart from another city?
+>>>> no_result request_or_city
+2
+user
+we can depart from Toronto
+>>>> inform_or_city
+2
+wizard
+Gotham City is not a destination we travel to. Are you interested in any other destinations?
+>>>> no_result suggest_dst_city
+2
+user
+hmm what options would i have out of Toronto?
+>>>> inform_or_city
+2
+wizard
+Would you be interested in Calgary?
+>>>> suggest_dst_city
+2
+user
+that would be nice
+>>>> other
+2
+wizard
+I have a departure from Toronto to Calgary  on August 17 returning on August 24. Does that work for you?
+>>>> suggest_dst_city suggest_or_city suggest_str_date suggest_end_date
+2
+user
+No sorry i was planning on getting a tan this vacation. Thanks, is there anywhere else? Thank you, is there anywhere else?
+>>>> negate thanks request_alternate
+2
+wizard
+How about a trip to Dominican Republic? it is quite cheap at this time of year.
+>>>> suggest_dst_city
+2
+user
+What options do you have available for me?
+>>>> request_options
+2
+wizard
+I have the el Mar hotel available in Punta Cana this week.
+>>>> suggest_hotel_name suggest_dst_city suggest_str_date
+2
+user
+That sounds interesting. how many stars does the hotel have?
+>>>> request_hotel_category
+2
+wizard
+2.5 stars. You would have to fly out of Melbourne though
+>>>> suggest_hotel_category suggest_or_city
+2
+user
+Ahh...maybe another time
+>>>> negate
+3
+user
+Hi I'd like to go to Caprica from Busan, between Sunday August 21, 2016 and Wednesday August 31, 2016
+>>>> inform_dst_city inform_or_city inform_str_date inform_end_date
+3
+wizard
+And what would be your maximum budget for this trip?
+>>>> request_budget
+3
+user
+Actually it's unlimited for this trip
+>>>> inform_budget
+3
+wizard
+How many adults and how many children will be making this trip?
+>>>> request_n_adults request_n_kids
+3
+user
+2 adults
+>>>> inform_n_adults
+3
+wizard
+I have no trips to Caprica from Busan.  I do have a trip to Mannheim, Germany, one to Kingston , Canada, and another to Toronto Canada.  Would you like to select alternate dates or an alternate travel destination?
+>>>> no_result suggest_dst_city suggest_dates
+3
+user
+Do you have anything for San Antonio as a destination?
+>>>> inform_dst_city
+3
+wizard
+Yes, I do.  I have one for 8445.37 USD.  Would you like to book this package?  The guest rating is 7.15/10 and there is free parking and free wifi.  Leaving Sunday, August 21st at 11:00 a.m. and returning Sunday, August 28th at 1:00 a.m.
+>>>> suggest_budget suggest_hotel_wifi suggest_hotel_parking suggest_end_date suggest_str_date
+3
+user
+Is breakfast included?
+>>>> request_hotel_breakfast
+3
+wizard
+Yes, it is.
+>>>> inform_hotel_breakfast
+3
+user
+That sounds great. 1:00 am return on Sunday August 28th is very early in the morning... 
+>>>> inform_str_date
+3
+wizard
+Would you like to book this package?
+>>>> suggest_book
+3
+user
+Yes I would. Thanks for your help.
+>>>> affirm_book
+4
+user
+Hello, I am looking to book a trip for 2 adults and 6 children for $21,300 or less. We are departing from Kochi for Denver.
+>>>> inform_n_kids inform_n_adults inform_budget inform_dst_city inform_or_city
+4
+wizard
+I have several options available within your budget. How long would you like to travel for? And do you have dates in mind?
+>>>> request_dates
+4
+user
+I do not have any dates in mind. I would like to spend as much time in Denver as my budget will allow.
+>>>> inform_dates inform_dst_city inform_budget
+4
+wizard
+I can book 7 days at a 4.0 star hotel for 19028.93USD. I can also book 7 days at a 3.0 star hotel for 12824.84USD.
+>>>> suggest_duration_time suggest_hotel_category suggest_budget
+4
+user
+Do these packages have different departure dates? When would I be leaving for each of them?
+>>>> request_str_date
+4
+wizard
+The 3.0 star trip leaves Kochi August 26 and returns August 31. The 4.0 star leaves August 27 from Kochi and returns September 1.
+>>>> suggest_str_date suggest_end_date
+4
+user
+Ok, I would like to purchase the trip with the 4-star hotel.
+>>>> inform_hotel_category
+4
+wizard
+Perfect, I will book that trip for you now. You will depart Kochi at 9:00 am August 27. Have a nice day.
+>>>> action_book inform_or_city inform_str_date
+4
+user
+Thank you
+>>>> thanks

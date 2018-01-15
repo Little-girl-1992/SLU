@@ -1,0 +1,268 @@
+34
+user
+Hi im from punta cana looking to go on a trip
+>>>> greeting inform_citys
+34
+wizard
+Where would you like to travel to?
+>>>> request_citys
+34
+user
+Im thinking to Fukuoka
+>>>> inform_citys
+34
+wizard
+Did you have any specific dates in mind?
+>>>> request_dates
+34
+user
+maybe the 15th of August until the 20th
+>>>> inform_dates
+34
+wizard
+How many people will be travelling with you?
+>>>> request_member
+34
+user
+just myself
+>>>> inform_member
+34
+wizard
+would the 15th to the 18th work for you?
+>>>> suggest_dates
+34
+user
+where would i be staying?
+>>>> request_hotel
+34
+wizard
+HOTEL Sugoi in Fukuoka
+>>>> inform_hotel_name
+34
+user
+what is the rating
+>>>> request_hotel_category
+34
+wizard
+It is a 3-star hotel and your package includes free wifi
+>>>> inform_hotel_name inform_hotel_wifi
+34
+user
+and what if i were to go to Essen?
+>>>> inform_citys
+34
+wizard
+I have a couple of choices in Essen. Are you looking for a 2-star or a 3-star option?
+>>>> request_hotel_category
+34
+user
+The three star option
+>>>> inform_hotel_category
+34
+wizard
+Your best choice would be the Relaxation Hotel which is a 3-star hotel and includes breakfast and wifi. It is available either from August 15th to August 27 or from August 27th to September 2nd. Do either one of those dates fit into your schedule?
+>>>> suggest_hotel_name suggest_hotel_category suggest_hotel_breakfast suggest_hotel_wifi suggest_dates
+34
+user
+these dates don’t look like they would be compatible with my schedule. Hey, how about going to hiroshima?
+>>>> negate_dates request_citys
+34
+wizard
+I apologize, I have nothing available to Hiroshima. Would you like me to explore other options?
+>>>> sorry no_result request_alternate
+34
+user
+Is there a flight to Santiago
+>>>> inform_citys
+34
+wizard
+I have several that suit your dates.. Your stay would be at the Una casa which is a 3-star hotel and includes free breakfast, wifi and parking, should you wish to rent a car and explore the surrounding areas. The flight departs on August 15th and returns on the 20th.
+>>>> suggest_book suggest_dates suggest_hotel_category suggest_hotel_breakfast suggest_hotel_wifi
+34
+user
+can you compare the price of this and the one to the package in St. Loius
+>>>> request_budget request_package
+34
+wizard
+The package to Santiago is $2455.37 as opposed to the package to Essen which would be $3016.94. Please keep in mind that the trip to Essen is a longer trip though.
+>>>> suggest_package suggest_budget
+34
+user
+and how much is the trip to Fukuoka and what are the dates?
+>>>> request_dates
+34
+wizard
+That package was $3794 based on economy class. It departed on August 15th with a return date of August 18th.
+>>>> inform_budget inform_flight_type inform_dates
+34
+user
+which of these have the best rated hotels?
+>>>> request_hotel
+34
+wizard
+In Fukuoka, the hotel is a 3-star, in Essen you have the option of a 2-star at $3016.94 or a 3-star at $3073.16 and in Santiago the hotel has a 3-star rating.
+>>>> suggest_hotel_category suggest_budget suggest_citys
+34
+user
+it seems to me that the packages in Essen are the best offer. So what are the dates?
+>>>> inform_dates inform_citys
+34
+wizard
+Are you interested in the 2-star option or the 3-star option?
+>>>> request_hotel_category
+34
+user
+the 3 star hotel seems to be the best how much would it be to book a business class flight?
+>>>> inform_hotel_category request_flight_type
+34
+wizard
+If you are looking for a business class flight, I only have one package that has the availability. It would be at the Motel Ivory which is the 2-star hotel and is only available from August 26 to September 1st. The total price for that package is $3314.99.
+>>>> suggest_flight_type suggest_hotel_category suggest_dates suggest_budget
+34
+user
+If i were to choose economy class what would it be?
+>>>> request_flight_type
+34
+wizard
+At the 2-star Motel Ivory Safari, for your original departure date of August 15 it is $3016.94. At the 3-star Relaxation Hotel, it is $3073.16. Is Essen your final choice for the destination?
+>>>> suggest_hotel_category suggest_dates suggest_budget request_citys
+34
+user
+yes i believe it will be. lets book the 3 star hotel
+>>>> inform_citys inform_hotel_category
+34
+wizard
+Fantastic. Let me get all your information so that we can finalize your reservation.
+>>>> other
+34
+user
+sounds perfect! thank you!
+>>>> thanks
+35
+user
+Hey! You can help me by finding a trip to Philadelphia from Maceio.
+>>>> greeting inform_citys
+35
+wizard
+In Philadelphia you can stay at a 2.5 star hotel for 11 days. As for Fukuoka, 11 days at a 2.5 star hotel would cost 4719.74USD. I can offer 14 days in Essen for 3787.14USD; this would be at a 2.0 star hotel. 4 days at a 2.0 star hotel in San Antonio would cost 2311.48USD.
+>>>> suggest_citys suggest_budget suggest_hotel_category
+35
+user
+Let's start with Philadelphia, how much is it I upgrade to business class?
+>>>> request_budget inform_flight_type inform_citys
+35
+wizard
+For this hotel in Philadelphia, it would cost 3340.56USD to travel from Maceio by business class.
+>>>> suggest_budget inform_citys inform_flight_type
+35
+user
+And for a four star hotel?
+>>>> request_hotel_category
+35
+wizard
+Sorry, I only have 2.5 star hotels available in Philadelphia.
+>>>> sorry inform_hotel_category inform_citys
+35
+user
+Let's see about Fukuoka upgraded to business class and a four star hotel.
+>>>> request_flight_type request_hotel_category
+35
+wizard
+I have a 3.5 star hotel available in Fukuoka, The Oceanside Hotel. It has a guest rating of 8.22/10. I could book you a business class trip for 11 days at 6228.88USD.
+>>>> suggest_hotel_category suggest_flight_type suggest_budget suggest_dates
+35
+user
+Is this hotel in the downtown area of the city?
+>>>> request_hotel
+35
+wizard
+I do not know the location of The Oceanside Hotel within the city of Fukuoka, sorry.
+>>>> no_result sorry
+35
+user
+Is there a spa in the hotel?
+>>>> other
+35
+wizard
+There is no spa in the hotel, but there is free wifi.
+>>>> inform_hotel_wifi
+35
+user
+I will keep this option in mind. How about Essen, do you have anything less than 14 days?
+>>>> inform_dates
+35
+wizard
+Do you have a length of stay in mind?
+>>>> request_dates
+35
+user
+Around 11 days.
+>>>> inform_dates
+35
+wizard
+Sorry, I am only coming up with 14 day trips to Essen. Perhaps another nearby departure city would work?
+>>>> sorry no_result suggest_citys
+35
+user
+Good idea. What about Canoas?
+>>>> inform_citys
+35
+wizard
+It seems that Canoas is not in my database.
+>>>> no_result
+35
+user
+What about porto alegre
+>>>> inform_citys
+35
+wizard
+I have multiple 5 day options available from Porto to Essen. 
+>>>> suggest_dates
+35
+user
+I would prefer 11 days
+>>>> inform_dates
+35
+wizard
+Do you have a departure date in mind? Or an approximate departure date?
+>>>> request_dates
+35
+user
+Anytime in the month of September
+>>>> inform_dates
+35
+wizard
+Unfortunately I only have 5 days options leaving from Porto available at this time.
+>>>> sorry suggest_dates suggest_citys
+35
+user
+In that case, let's go back to the Fukuoka 11 day package.
+>>>> request_package
+35
+wizard
+Would you like me to explore your Fukuoka options leaving from Porto Alegre?
+>>>> suggest_citys
+35
+user
+Yes please.
+>>>> affirm_citys
+35
+wizard
+I can offer 13 days in Fukuoka for 5777.48USD.
+>>>> suggest_dates suggest_citys suggest_budget
+35
+user
+In that case, I will take the 11 day package. One more thing, is there free breakfast?
+>>>> affirm_package request_hotel_breakfast
+35
+wizard
+The 11 day trip to Fukuoka from Maceia is also during August. However, the Oceanside Hotel does provide free breakfast!
+>>>> inform_hotel_breakfast inform_dates
+35
+user
+ I'll book this one. Thank you, friend!
+>>>> affirm_book thanks
+35
+wizard
+Great, thank you!
+>>>> thanks

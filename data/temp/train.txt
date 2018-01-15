@@ -1,0 +1,1984 @@
+0
+user
+I'd like to book a trip to Atlantis from Caprica on Saturday, August 13, 2016 for 8 adults. I have a tight budget of 1700.
+>>>> inform_citys inform_dates inform_member inform_budget
+0
+wizard
+Hi...I checked a few options for you, and unfortunately, we do not currently have any trips that meet this criteria. Would you like to book an alternate travel option?
+>>>> no_result sorry request_alternate
+0
+user
+Yes, how about going to Neverland from Caprica on August 13, 2016 for 5 adults. For this trip, my budget would be 1900.
+>>>> inform_citys inform_dates inform_member inform_budget
+0
+wizard
+I checked the availability for this date and there were no trips available. Would you like to select some alternate dates?
+>>>> no_result request_alternate
+0
+user
+I have no flexibility for dates... but I can leave from Atlantis rather than Caprica. How about that?
+>>>> inform_citys inform_dates
+0
+wizard
+I checked the availability for that date and there were no trips available. Would you like to select some alternate dates?
+>>>> no_result suggest_dates
+0
+user
+I suppose I'll speak with my husband to see if we can choose other dates, and then I'll come back to you.Thanks for your help
+>>>> thanks
+1
+user
+Hello, I am looking to book a vacation from Gotham City to Mos Eisley for $2100.
+>>>> inform_citys inform_budget greeting
+1
+wizard
+Hi. Sorry, I can't find any trips from Gotham City to Mos Eisley for you.
+>>>> sorry no_result
+1
+user
+What about a trip from Gotham City to Neverland for the same budget?
+>>>> inform_citys inform_budget
+1
+wizard
+Sorry, I cannot find any trips leaving from Gotham City. Could you suggest another nearby departure city?
+>>>> sorry no_result suggest_citys
+1
+user
+Would any packages to Mos Eisley be available if I increase my budget to $2500?
+>>>> inform_citys inform_budget
+1
+wizard
+There are no trips available to Mos Eisley.
+>>>> no_result
+1
+user
+You know what, I'd like to try and visit Neverland
+>>>> inform_citys
+1
+wizard
+I cannot find any trips available to Neverland.
+>>>> no_result
+1
+user
+Do you have any trips from Gotham City to Kobe for my original budget of $2100?
+>>>> inform_citys inform_budget
+1
+wizard
+I can book you a 3 day trip to Kobe leaving from Sapporo, Japan. Is this ok?
+>>>> suggest_dates suggest_citys
+1
+user
+No, that's too far for me. I need a flight that leaves from Birmingham.
+>>>> negate_citys inform_citys
+1
+wizard
+I can book you a trip from Birmingham to Kobe for 2747.8 USD.
+>>>> suggest_citys suggest_budget
+1
+user
+How many days would I be in Kobe?
+>>>> request_dates
+1
+wizard
+You would arrive in Kobe August 17th and return to Birmingham on August 22nd.
+>>>> inform_dates inform_citys
+1
+user
+What would the price be if I shortened my trip by one day?
+>>>> request_budget inform_dates
+1
+wizard
+I can not find any trips from Birmingham to Kobe for 4 days.
+>>>> no_result
+1
+user
+Ok, then I would like to purchase this package. What activities are included in this package?
+>>>> request_activities
+1
+wizard
+There are no activities listed for this package. You will be staying at the Ivory Legacy Hotel for 7 days. This hotel has a 4.5 star rating and free wifi. Will I go ahead and book this package?
+>>>> suggest_book suggest_hotel_name suggest_dates suggest_hotel_category suggest_hotel_wifi
+1
+user
+Yes, I would like to book this package.
+>>>> affirm_book
+1
+wizard
+Great. Your flight departs from Birmingham at 9:00 am - Wednesday, August 17th 2016. Enjoy your trip, I have booked this package for you.
+>>>> action_book inform_dates inform_citys
+2
+user
+Hello there i am looking to go on a vacation with my family to Gotham City, can you help me?
+>>>> greeting inform_citys inform_member
+2
+wizard
+when would you like to travel and how many people will you be?
+>>>> request_member request_dates
+2
+user
+Not sure when we want to leave, but we are 12 kids and 5 adults
+>>>> inform_dates inform_member
+2
+wizard
+do you have a budget?
+>>>> request_budget
+2
+user
+yes i do, it is around $2200
+>>>> inform_budget
+2
+wizard
+where will you be travelling from?
+>>>> request_citys
+2
+user
+We are from Neverland
+>>>> inform_citys
+2
+wizard
+We have nothing available leaving from Neverland, are you able to depart from another city?
+>>>> no_result request_citys
+2
+user
+we can depart from Toronto
+>>>> inform_citys
+2
+wizard
+Gotham City is not a destination we travel to. Are you interested in any other destinations?
+>>>> no_result suggest_citys
+2
+user
+hmm what options would i have out of Toronto?
+>>>> inform_citys
+2
+wizard
+Would you be interested in Calgary?
+>>>> suggest_citys
+2
+user
+that would be nice
+>>>> affirm_citys
+2
+wizard
+I have a departure from Toronto to Calgary on August 17 returning on August 24. Does that work for you?
+>>>> suggest_citys suggest_dates
+2
+user
+No sorry i was planning on getting a tan this vacation. Thanks, is there anywhere else? Thank you, is there anywhere else?
+>>>> negate_citys thanks request_alternate
+2
+wizard
+How about a trip to Dominican Republic? it is quite cheap at this time of year.
+>>>> suggest_citys
+2
+user
+What options do you have available for me?
+>>>> request_alternate
+2
+wizard
+I have the el Mar hotel available in Punta Cana this week.
+>>>> suggest_hotel_name suggest_citys suggest_dates
+2
+user
+That sounds interesting. how many stars does the hotel have?
+>>>> request_hotel_category
+2
+wizard
+2.5 stars. You would have to fly out of Melbourne though
+>>>> inform_hotel_category inform_citys
+2
+user
+Ahh...maybe another time
+>>>> negate_dates
+3
+user
+Hi I'd like to go to Caprica from Busan, between Sunday August 21, 2016 and Wednesday August 31, 2016
+>>>> inform_citys inform_dates
+3
+wizard
+And what would be your maximum budget for this trip?
+>>>> request_budget
+3
+user
+Actually it's unlimited for this trip
+>>>> inform_budget
+3
+wizard
+How many adults and how many children will be making this trip?
+>>>> request_member
+3
+user
+2 adults
+>>>> inform_member
+3
+wizard
+I have no trips to Caprica from Busan. I do have a trip to Mannheim, Germany, one to Kingston , Canada, and another to Toronto Canada. Would you like to select alternate dates or an alternate travel destination?
+>>>> no_result suggest_citys suggest_dates
+3
+user
+Do you have anything for San Antonio as a destination?
+>>>> request_citys
+3
+wizard
+Yes, I do. I have one for 8445.37 USD. Would you like to book this package? The guest rating is 7.15/10 and there is free parking and free wifi. Leaving Sunday, August 21st at 11:00 a.m. and returning Sunday, August 28th at 1:00 a.m.
+>>>> suggest_budget suggest_hotel_wifi suggest_dates
+3
+user
+Is breakfast included?
+>>>> request_hotel_breakfast
+3
+wizard
+Yes, it is.
+>>>> inform_hotel_breakfast
+3
+user
+That sounds great. 1:00 am return on Sunday August 28th is very early in the morning... 
+>>>> inform_dates
+3
+wizard
+Would you like to book this package?
+>>>> suggest_book
+3
+user
+Yes I would. Thanks for your help.
+>>>> affirm_book
+4
+user
+Hello, I am looking to book a trip for 2 adults and 6 children for $21,300 or less. We are departing from Kochi for Denver.
+>>>> inform_member inform_budget inform_citys
+4
+wizard
+I have several options available within your budget. How long would you like to travel for? And do you have dates in mind?
+>>>> request_dates
+4
+user
+I do not have any dates in mind. I would like to spend as much time in Denver as my budget will allow.
+>>>> inform_dates inform_citys inform_budget
+4
+wizard
+I can book 7 days at a 4.0 star hotel for 19028.93USD. I can also book 7 days at a 3.0 star hotel for 12824.84USD.
+>>>> suggest_dates suggest_hotel_category suggest_budget
+4
+user
+Do these packages have different departure dates? When would I be leaving for each of them?
+>>>> request_dates
+4
+wizard
+The 3.0 star trip leaves Kochi August 26 and returns August 31. The 4.0 star leaves August 27 from Kochi and returns September 1.
+>>>> inform_dates inform_hotel_category
+4
+user
+Ok, I would like to purchase the trip with the 4-star hotel.
+>>>> affirm_hotel_category
+4
+wizard
+Perfect, I will book that trip for you now. You will depart Kochi at 9:00 am August 27. Have a nice day.
+>>>> action_book inform_citys inform_dates
+4
+user
+Thank you
+>>>> thanks
+5
+user
+Hey, i Want to go to St. Louis on the 17th of August
+>>>> inform_citys inform_dates
+5
+wizard
+For how many days?
+>>>> request_dates
+5
+user
+I need to back by the 31st
+>>>> inform_dates
+5
+wizard
+What will your departure city be?
+>>>> request_citys
+5
+user
+I'm from Calgary
+>>>> inform_citys
+5
+wizard
+I have a direct flight leaving from Calgary on August 18 and returning on August 28th. Does that work for you?
+>>>> suggest_dates suggest_citys
+5
+user
+Yes that sounds perfect may you please tell me about the destination place
+>>>> request_citys
+5
+wizard
+It is the Glorious Cloak inn hotel in St. Louis. It has a 3-star rating.
+>>>> inform_citys inform_hotel_category inform_hotel_name
+5
+user
+That sounds lavish, what type of flight would that be?
+>>>> request_flight_type
+5
+wizard
+You would be flying business class, for a grand total of only $1858.14
+>>>> inform_flight_type
+5
+user
+Are there any possible flights with economy class?
+>>>> request_flight_type
+5
+wizard
+I have a package at the Lunar whcih has a 5 star rating on an economy class flight on the same dates for $1558.00
+>>>> inform_flight_type inform_budget inform_dates
+5
+user
+that sounds even better.
+>>>> affirm_flight_type affirm_budget affirm_dates
+5
+wizard
+This deal includes free breakfast and free wifi. Would you like me to book it for you?
+>>>> inform_hotel_breakfast inform_hotel_wifi suggest_book
+5
+user
+Yes please, that sounds wonderful. thank you
+>>>> affirm_book
+6
+user
+I'm looking for a trip to Gotham City leaving from Kakariko Village on Saturday, August 13, 2016. 3 adults for no more than $2400 USD.
+>>>> inform_citys inform_dates inform_budget inform_member
+6
+wizard
+I have a trip available to Vancouver for these dates within your price range. Would you like to increase your budget or adjust the dates?
+>>>> request_dates request_budget
+6
+user
+I'd like to adjust the departure city to Caprica.
+>>>> inform_citys
+6
+wizard
+Still no availability for this destination. Would you like to increase your budget or adjust the dates?
+>>>> negate_citys request_dates request_budget
+6
+user
+The dates cannot be changed. How about going to Theed with 14 adults, leaving from Kakariko Village, on a budget of $2900?
+>>>> negate_dates inform_budget inform_member
+6
+wizard
+Still no availability.
+>>>> no_result
+6
+user
+Then I will bring my business elsewhere. Thank you.
+>>>> thanks
+7
+user
+Hello, I would like to book a 2-week trip leaving from Melbourne on August 27. I would like to go to Mannheim.
+>>>> greeting inform_dates inform_citys
+7
+wizard
+Have you got a budget for this vacation?
+>>>> request_budget
+7
+user
+I do not have a budget, however I would like to pick whichever package is cheapest. Could you offer me the cheapest package for each destination?
+>>>> inform_budget request_citys
+7
+wizard
+I can book you 9 days in Mannheim for 3258.15USD at a 5 star hotel,
+>>>> suggest_citys suggest_dates suggest_budget suggest_hotel_category
+7
+user
+Is there a package to Mannheim which offers a cheaper hotel? I am flexible with my dates of arrival and departure.
+>>>> request_budget inform_dates
+7
+wizard
+I am unable to find any cheaper packages for Mannheim
+>>>> inform_budget inform_citys
+7
+user
+What would the cost be if I stayed for 10 days in Mexico City?
+>>>> request_budget inform_citys inform_dates
+7
+wizard
+You can stay in Mexico City for 8 days for 426.16USD leaving from Melbourne, USA.
+>>>> inform_dates inform_citys inform_budget
+7
+user
+Actually I am leaving from Melbourne, Australia. How does this affect the price of the trip?
+>>>> inform_citys request_budget
+7
+wizard
+I cannot find any trips available from Melbourne, Australia to Mexico City.
+>>>> negate_citys
+7
+user
+Could I purchase a package to Vancouver similar to the one I was offered?
+>>>> request_citys
+7
+wizard
+I cannot find any trips available from Melbourne, Australia to any destinations. This point of departure is not in my database.
+>>>> negate_citys
+7
+user
+Ok, thank you for your time anyways
+>>>> thanks
+8
+user
+Hello, I am planning to book a trip to pittsborgh
+>>>> greeting inform_citys
+8
+wizard
+Hello. Would that be Pittsborgh, Pennsylvania?
+>>>> greeting request_citys
+8
+user
+i think so!
+>>>> inform_citys
+8
+wizard
+And what city will you be departing from?
+>>>> request_citys
+8
+user
+We will be leaving from Fukuoka
+>>>> inform_citys
+8
+wizard
+how many people will be travelling together?
+>>>> request_member
+8
+user
+there will be myself, 1 adult, and my four kids
+>>>> inform_member
+8
+wizard
+Do you have specific dates in mind?
+>>>> request_dates
+8
+user
+none at the moment
+>>>> inform_dates
+8
+wizard
+and for how long would you like to go for?
+>>>> request_dates
+8
+user
+also not sure yet
+>>>> inform_dates
+8
+wizard
+I have no flights available to Pittsburgh, but I have package available to Vancouver
+>>>> negate_citys suggest_citys
+8
+user
+I would like to see the availabilities in Vancouver please
+>>>> inform_citys
+8
+wizard
+I have several available. Do you have a budget in mind?
+>>>> request_budget
+8
+user
+I have $12600 to spend on this vacation
+>>>> inform_budget
+8
+wizard
+It would be helpful if you could provide me with some dates
+>>>> request_dates
+8
+user
+we are very flexible with dates anything would work
+>>>> inform_dates
+8
+wizard
+I am very sorry but I have nothing available at the moment
+>>>> sorry negate_dates
+8
+user
+that's very unfortunate, thank you anyways
+>>>> thanks
+9
+user
+Hi, I need to go to Mos Eisley for a wedding, leaving on Saturday, August 13, 2016 and returning on Tuesday, August 16, 2016. Preferably for $3700.
+>>>>greeting inform_citys inform_dates
+9
+wizard
+Would you like to have a departure from a specific location?
+>>>> request_citys
+10
+user
+I'd like to get away from Monday, August 15, 2016 to Wednesday, August 31, 2016. My budget is $3200 and I would leave from Detroit.
+>>>> inform_dates inform_budget inform_citys
+10
+wizard
+And what destination would you like to travel to?
+>>>> request_citys
+10
+user
+Anywhere, I'm looking for an adventure. What do you have?
+>>>> inform_citys
+10
+wizard
+How about Mexico or Porto Alegre?
+>>>> suggest_citys
+10
+user
+Let's look at both
+>>>> request_citys
+10
+wizard
+Mexico is unavailable. Porto Alegre is available, but you would have to leave from Santos.
+>>>> inform_citys
+10
+user
+Can you please suggest some destinations that are available? I am leaving from Detroit.
+>>>> request_citys
+10
+wizard
+I have no departures available from Detroit. for these dates. Would you like to make a date change?
+>>>> no_result suggest_dates
+10
+user
+Anything between August 15 and August 31?
+>>>> request_dates
+10
+wizard
+I'm sorry, but we do not have any departures from Detroit available for these dates for the budget you provided. Would you like to adjust your budget for this trip?
+>>>> sorry no_result suggest_budget
+10
+user
+No I cannot. Thank you for your help
+>>>> negate_budget thanks
+11
+user
+Good day, please book me a trip from Vancouver, Jamaica to Recife. I would like to leave for 17 days on August 24.
+>>>> inform_citys inform_dates
+11
+wizard
+Would you like to travel to Vancouver, Canada from Dublin, USA?
+>>>> request_citys
+11
+user
+No, I would like to depart from Vancouver, Jamaica for the aforementioned destination.
+>>>> negate_citys inform_citys
+11
+wizard
+I can book you an 8 day trip from Calgary to Vancouver, Canada for 810.50USD.
+>>>> suggest_dates suggest_citys suggest_budget
+11
+user
+I would not like to travel to Vancouver, Canada. Do you have any trips to Recife, Brazil?
+>>>> negate_citys request_citys
+11
+wizard
+I can book you a trip from Porto Alegre to Recife for 682.19USD.
+>>>> suggest_citys suggest_budget
+11
+user
+I will take any package you give me to any destination as long as it leaves from Vancouver, Jamaica.
+>>>> affirm_citys
+11
+wizard
+I can book you a trip from Vancouver, Canada to Toronto, Canada for 837.99USD.
+>>>> suggest_citys suggest_budget
+11
+user
+If you cannot book me a flight that leaves from Vancouver, Jamaica then I cannot book a trip.
+>>>> negate_citys
+11
+wizard
+I cannot book you a trip leaving from Vancouver, Jamaica.
+>>>> no_result
+11
+user
+Actually I will be departing from Vancouver, British Columbia, do you have packages to Recife?
+>>>> inform_citys
+11
+wizard
+I can book 11 days in Recife leaving from Vancouver for 2171.6USD.
+>>>> suggest_dates suggest_citys suggest_budget
+11
+user
+Do you have any similar packages to Goiania?
+>>>> request_citys
+11
+wizard
+I can book 5 days in Goiania for 2190.68USD.
+>>>> inform_dates inform_citys inform_budget
+11
+user
+What kind of hotel would I be staying at in Recife?
+>>>> request_hotel_category
+11
+wizard
+3.5 star hotel for free wi-fi, free parking, and free breakfast.
+>>>> inform_hotel_category inform_hotel_wifi inform_hotel_breakfast
+11
+user
+Would my room have a view of the city? How much would it cost to upgrade to a room with a view?
+>>>> request_budget
+11
+wizard
+I cannot provide this information
+>>>> no_result
+11
+user
+Ok, I'm ready to buy this package
+>>>> affirm_book
+11
+wizard
+Ok. I will book this package for you. You will be leaving Vancouver, Canada at 1:00 pm - Monday, August 15th 2016 and arriving in Recife, Brazil at 10:16 pm - Monday, August 15th 2016. You will be staying at La Casa Del Amor. Enjoy your trip.
+>>>> inform_dates inform_citys inform_hotel_name
+11
+user
+I was supposed to leave on August 24th. Do you have any packages that leave on that date?
+>>>> request_dates
+11
+wizard
+I can book you 11 days in Recife leaving Vancouver on August 27th for 3119.42USD.
+>>>> suggest_dates suggest_citys suggest_budget
+11
+user
+Actually I would like to purchase the first package to Recife.
+>>>> affirm_citys
+11
+wizard
+Ok, I will book you the package to Recife that leaves Vancouver, Canada on August 15.
+>>>> suggest_book suggest_dates suggest_citys
+11
+user
+Thanks
+>>>> Thanks affirm_book
+12
+user
+Hi im looking for a nice destination that i could go to from Columbus
+>>>> inform_citys
+12
+wizard
+I have 2 choices, Vancouver or Toronto.
+>>>> suggest_citys
+12
+user
+What options are there for both
+>>>> request_citys
+12
+wizard
+I have a few. Do you have a budget in mind?
+>>>> request_budget
+12
+user
+$3700 is my budget at the moment
+>>>> inform_budget
+12
+wizard
+I have the Obsidian Gem Inn in Vancouver which is a 4-star hotel at $1934.64 or the Hotel Richard in Toronto which is a 3-star hotel at $2393.00. Both are for a 14 day stay.
+>>>> suggest_citys suggest_hotel_category suggest_budget suggest_dates
+12
+user
+Toronto seems like a better place this time of year, when would the flights be?
+>>>> request_citys request_dates
+12
+wizard
+I have a direct flight to Toronto departing on August 15th and returning on August 28th. Would you like me to book that for you?
+>>>> suggest_dates suggest_citys suggest_book
+12
+user
+would by chance have one leaving on the 19th
+>>>> request_dates
+12
+wizard
+I have a flight available departing on August 24th and returning on September 6th
+>>>> suggest_dates
+12
+user
+let's go ahead and book this
+>>>> affirm_book
+12
+wizard
+Perfect. Thank you.
+>>>> thanks action_book
+12
+user
+thank you
+>>>> thanks
+13
+user
+Hi, I have a big family and we can't afford a big vacation, we want to go to Atlantis from Mos Eisley for $3600 at most.
+>>>> greeting inform_dates inform_citys inform_member inform_budget
+13
+wizard
+Do you have a preferred set of dates for this trip?
+>>>> request_dates
+13
+user
+Nope
+>>>> inform_dates
+13
+wizard
+And how many adults and how many children are you bringing with you to Atlantis?
+>>>> request_member
+13
+user
+12 adults and one child.
+>>>> inform_member
+13
+wizard
+I'm sorry, but we do not currently have any travel packages available for this destination. Do you have any other destinations that you might like to travel to?
+>>>> sorry no_result request_citys
+13
+user
+No, we are visiting family in Atlantis. Can you check once more please?
+>>>> negate_citys
+13
+wizard
+I'm sorry, but I do not currently have any travel packages available for this location. Are you quite sure that I cannot interest you in another travel destination?
+>>>> sorry no_result suggest_citys
+13
+user
+Yes, I'm quite sure. Thank you for your help.
+>>>> affirm_citys thanks
+14
+user
+Hi, I'm leaving from Diagon Alley and going to Coruscant on a budget of $3400. The dates don't matter, but I cannot afford anything over my budget.
+>>>> greeting inform_citys inform_budget inform_dates
+14
+wizard
+And how many children and adults will you be bringing with you?
+>>>> request_member
+14
+user
+Just myself.
+>>>> inform_member
+14
+wizard
+I'm sorry, but this travel destination is not available.
+>>>> sorry no_result
+14
+user
+What about Neverland on the same budget?
+>>>> request_citys request_budget
+14
+wizard
+Neverland is unavailable. Vancouver would be available, however. Would you like to select another location?
+>>>> inform_citys suggest_citys
+14
+user
+No I cannot do another location. What if I increased my budget by $400?
+>>>> negate_citys request_budget
+14
+wizard
+I am sorry, but we do not have any trips available to the Neverland travel destination.
+>>>> sorry no_result
+14
+user
+nor Coruscant?
+>>>> request_citys
+14
+wizard
+Coruscant is not available either.
+>>>> no_result
+14
+user
+Ok thanks.
+>>>> thanks
+15
+user
+Hi there, im from Vitoria and I want to go on vacation
+>>>> greeting inform_citys
+15
+wizard
+where would you like to go?
+>>>> request_citys
+15
+user
+I would like to go to Santo domingo
+>>>> inform_citys
+15
+wizard
+would a 7 day trip work for you?
+>>>> suggest_dates
+15
+user
+yes that sounds fine, looking to leave on the 19th
+>>>> affirm_dates
+15
+wizard
+great, I have a flight departing on the 19th and returning on the 25th of August
+>>>> suggest_dates
+15
+user
+what is the hotel like?
+>>>> request_hotel_category
+15
+wizard
+It is called the Rose Sierra Hotel and it is a 3-star hotel that includes free breakfast, wifi and parking. The total cost would be $2170.90.
+>>>> inform_hotel_wifi inform_hotel_category inform_hotel_breakfast inform_hotel_name inform_budget
+15
+user
+what type of flight is that going to be?
+>>>> request_flight_type
+15
+wizard
+It is an economy class flight
+>>>> inform_flight_type
+15
+user
+let's book it please
+>>>> affirm_book
+15
+wizard
+Perfect. Have a great trip.
+>>>> action_book
+15
+user
+Thank you
+>>>> thanks
+16
+user
+Hi, me and my family want to take a trip to Kakariko Village.
+>>>> greeting inform_citys
+16
+wizard
+How many adults and how many children will you be bringing with you?  Do you have a preferred departure location? What would be your maximum budget?
+>>>> request_member request_citys request_budget
+16
+user
+We are four adults and 11 children departing from Godric's Hollow. $3500 is the most we are willing to spend.
+>>>> inform_budget inform_member inform_citys
+16
+wizard
+I do not have any packages available from that departure location for that budget. Would you like to adjust the budget?
+>>>> no_result request_budget
+16
+user
+I would not be able to spend more than $4500
+>>>> inform_budget
+16
+wizard
+Would you like to suggest another departure location? And what travel destination would you like to travel to?
+>>>> request_citys
+16
+user
+We'll catch a flight from Toronto then. We're headed for Kakariko Village.
+>>>> affirm_citys 
+16
+wizard
+There are no travel packages available to Kakariko Village.
+>>>> no_result
+16
+user
+Ok, do you have any travel packages to Kingston, Canada for 11 kids and 4 adults, $3500 or less, departing from Toronto?
+>>>> inform_citys inform_member inform_budget
+16
+wizard
+Yes, I have a package available leaving Toronto at 10:00 a.m. on August 24th and returning to Toronto at 4:00 a.m on August 30th. This package offers free breakfast, free wifi, and free parking. The cost of this package is 3465.91 USD. Would you like to book this package?
+>>>> suggest_budget suggest_dates suggest_citys suggest_book inform_hotel_wifi inform_hotel_breakfast
+16
+user
+Do you have any information on what activities are included in the package?
+>>>> request_activities
+16
+wizard
+I can't help you with that.
+>>>> no_result
+16
+user
+Is this a direct flight to Kingston or do we have to make a transfer? Are the tickets business class?
+>>>> request_flight_type
+16
+wizard
+The tickets are Economy. I'm sorry, we do not have any tickets available to Business Class for this flight. Would you like to book this package?
+>>>> inform_flight_type sorry suggest_book
+16
+user
+Yes, I'll take it. Thank you
+>>>> affirm_book thanks
+17
+user
+Hi, I'm looking for a trip from Thursday, August 18, 2016 to Thursday, September 8, 2016 to Mexico City
+>>>> greeting inform_dates inform_citys
+17
+wizard
+I can look into your options for you. Where would you like to depart from?
+>>>> request_citys
+17
+user
+Kingston
+>>>> inform_citys
+17
+wizard
+I can book 5 days in Mexico City leaving from Kingston, Canada for 1226.20USD. Or, if you're interested 12 days in Columbus for 1865.3USD.
+>>>> suggest_dates suggest_citys suggest_budget
+17
+user
+How many stars do the hotels have and what's included with the hotel?
+>>>> request_hotel_category
+17
+wizard
+The Mexico City hotel is 3.0 stars with free breakfast and free wifi, while the Columbus hotel is 2.5 stars with free parking and free wifi.
+>>>> inform_hotel_wifi inform_hotel_breakfast inform_hotel_category
+17
+user
+I prefer 3 stars and above. I'm flexible with my budget, is there anything else in Columbo?
+>>>> inform_hotel_category inform_budget
+17
+wizard
+I can get you 12 days at a 3.5 start hotel in Columbus for 1942.52USD.
+>>>> suggest_dates suggest_hotel_category suggest_budget suggest_citys
+17
+user
+That's looking good. I want to see a few more options before I choose one. There's nothing available in Porto?
+>>>> request_alternate
+17
+wizard
+You can spend 13 days in Porto at a 3.0 star hotel for 2112.86USD. 
+>>>> suggest_budget suggest_dates suggest_citys suggest_hotel_category
+17
+user
+Porto would be great. Can you tell me more about the hotel.
+>>>> affirm_citys request_hotel_category
+17
+wizard
+The hotel is Deluxe Hotel and has free breakfast and wifi. You can also stay at Amistad for 13 days, this hotel has a 3.5 rating as well with free breakfast and wifi.
+>>>> inform_hotel_name inform_hotel_wifi inform_hotel_breakfast suggest_dates suggest_citys inform_hotel_category
+17
+user
+Excellent. I'll stay at the Amistad for 13 days. Thanks for your help.
+>>>> affirm_book thanks
+18
+user
+Hi im from Caprica looking to book a vacation to Hyrule
+>>>> greeting inform_citys
+18
+wizard
+Hello, I am sorry but we do not have anything available for those destinations Are you interested in other destinations?
+>>>> sorry no_result request_alternate
+18
+user
+Ya for sure, not sure where, lets see what would fit my plans between the 13th of august and the 16th
+>>>> inform_dates
+18
+wizard
+would you be interested in going to Vancouver or Toronto?
+>>>> suggest_citys
+18
+user
+How about if i leave fro Birmingham?
+>>>> inform_citys
+18
+wizard
+I am sorry, it's a busy time of year and all I have available at the moment is Vancouver or Toronto.
+>>>> sorry negate_citys negate_dates
+18
+user
+sure lets try Vancouver then
+>>>> inform_citys
+18
+wizard
+Do you have a date in mind?
+>>>> request_dates
+18
+user
+I want to leave on the 13th of august and be back on the 16th
+>>>> inform_dates
+18
+wizard
+Do you have a date in mind?
+>>>> request_dates
+18
+user
+I want to leave on the 13th
+>>>> inform_dates
+18
+wizard
+I have nothing available on the 13th. I do have something available from the 17th to the 25th of August.
+>>>> no_result suggest_dates
+18
+user
+you know none of these are meeting my requests. i will just go with another service. Thank you.
+>>>> negate_book thanks
+19
+user
+Hey man, imma leave from Godric's Hollow on August 27, 2016 and go to Goiania. Can't pay more than 4300USD. Watcha got?
+>>>> greeting inform_budget inform_citys inform_dates
+19
+wizard
+Hello, how many people will be travelling to Goiania?
+>>>> greeting request_member
+19
+user
+Just me
+>>>> inform_member
+19
+wizard
+I cannot find any trips to Goiania leaving from Godric's Hollow. Is there another nearby city you could depart from?
+>>>> no_result request_alternate
+19
+user
+yeah how about Montreal?
+>>>> inform_citys
+19
+wizard
+I can book you 11 days in Goiania for 3374.42USD. Are you interested?
+>>>> suggest_citys suggest_dates suggest_budget
+19
+user
+that's leaving on August 27th?
+>>>> request_dates
+19
+wizard
+You will leave Montreal on Tuesday, August 16th 2016.
+>>>> inform_dates inform_citys
+19
+user
+nothing closer to the 27th?
+>>>> request_dates
+19
+wizard
+I can book 11 days at the same hotel for 3549.83USD leaving on August 25.
+>>>> suggest_budget suggest_citys suggest_dates
+19
+user
+ya that's awesome. I'll book it. thanks man.
+>>>> thanks affirm_book
+19
+wizard
+Ok, I will book that trip. Enjoy.
+>>>> action_book
+20
+user
+HI im from Alexandria looking to book a 12 day vacation
+>>>> greeting inform_citys inform_dates
+20
+wizard
+I only have flights available to Vancouver, Canada at the moment. Would that be satisfactory?
+>>>> request_citys
+20
+user
+no sorry that wouldn’t. I will look elsewhere thank you!
+>>>> negate_citys thanks
+21
+user
+Hi im from termina can we find a vacation that starts on the 13th?
+>>>> greeting inform_dates
+21
+wizard
+The earliest available flight I have leaves on September 20th, leaving from Dallas with Vancouver, Canada as a destination.
+>>>> inform_dates inform_citys
+21
+user
+How about if i leave from Vancouver where would i be able to go?
+>>>> request_citys
+21
+wizard
+Either Calgary or Toronto.
+>>>> suggest_citys
+21
+user
+and if i were to leave from columbus?
+>>>> request_citys
+21
+wizard
+From Columbus, I have flights available to Toronto or Vancouver.
+>>>> inform_citys
+21
+user
+what do we have for Toronto?
+>>>> request_citys
+21
+wizard
+From Toronto I have packages available to Calgary or Vancouver. I am only showing the cheapest packages. Perhaps if you give me your budget, I can find other more exciting destinations.
+>>>> request_budget
+21
+user
+i have a budget of $3000, and let’s say that i leave from Mexico City
+>>>> inform_budget inform_citys
+21
+wizard
+I apologize, but leaving from Mexico City, the only available destinations are Toronto or Vancouver. Perhaps if we change your dates?
+>>>> sorry suggest_dates
+21
+user
+no that is all thank you i will try another service. Thank you
+>>>> negate_book thanks
+22
+user
+Hi. I'm looking for an adventure from Thursday, August 18 to Saturday, September 3. I'm thinking of going to Fortaleza. Yes, with free breakfast of course. I'm leaving from Essen.
+>>>> greeting inform_dates inform_citys inform_hotel_breakfast
+22
+wizard
+I can book 8 days in Fortaleza for 2026.51USD, 9 days in Ciudad Juarez for 3393.97USD, 9 days in Burlington for 2119.26USD, or 9 days in Buenos Aires for 2085.15USD. All of these options have free breakfast.
+>>>> suggest_dates suggest_budget suggest_citys suggest_hotel_breakfast
+22
+user
+Can you tell me more about the Fortaleza package?
+>>>> request_package
+22
+wizard
+I can book 8 days in Fortaleza for 2026.51USD.
+>>>> inform_citys inform_dates inform_budget
+22
+user
+How many stars is the hotel?
+>>>> request_hotel_category
+22
+wizard
+The hotel in Fortaleza is 3.0 stars with a user rating of 7.15 stars.
+>>>> inform_hotel_category
+22
+user
+Is there free wifi?
+>>>> request_hotel_wifi
+22
+wizard
+There is free wifi and free parking in addition to free breakfast.
+>>>> inform_hotel_wifi inform_hotel_breakfast
+22
+user
+I like the Fortaleza package. How about the Ciudad Juarez and Burlington packages, is there free wifi and parking in addition to breakfast?
+>>>> affirm_package request_package request_hotel_wifi request_hotel_breakfast
+22
+wizard
+The hotel in Ciudad Juarez has free parking and wifi, but the hotel in Burlington does not offer free parking. It does, however, have free wifi.
+>>>> inform_hotel_wifi
+22
+user
+I'll book the Fortaleza package please.
+>>>> affirm_book
+22
+wizard
+You will leave Essen at 10:00 am - Wednesday, August 17th 2016. Thank you for using this service.
+>>>> inform_citys inform_dates thanks
+22
+user
+Perfect. Thank you for your help
+>>>> thanks
+23
+user
+Hi, my name is Harry Potter and I'd like to go to Hogsmeade leaving from Kakariko Village on Saturday, August 13th for 3 nights with 11 friends.
+>>>> greeting inform_member inform_dates inform_citys
+23
+wizard
+I can book 6 days at Obsidian Gem Inn in Vancouver, Canada for 10540.39USD. Would you like to leave from Dallas, USA?
+>>>> suggest_citys suggest_dates suggest_budget
+23
+user
+What? No. I'm looking for a trip to Hogsmeade with 11 of my friends.
+>>>> negate_citys
+23
+wizard
+I can offer you a trip for 12 adults is 6 days at Obsidian Gem Inn in Vancouver, Canada for 10540.39USD. Shall I go ahead and book this?
+>>>> suggest_budget suggest_dates suggest_member suggest_citys suggest_book
+23
+user
+I'll have to talk about it with my friends and get back to you. Thank you for your help.
+>>>> negate_book thanks
+23
+wizard
+Goodbye
+>>>> other
+24
+user
+Hi looking to go on vacation on the 13th of august
+>>>> greeting inform_dates
+24
+wizard
+Our best deal right now is to Vancouver, Canada.
+>>>> suggest_citys
+24
+user
+How about Naples
+>>>> inform_citys
+24
+wizard
+and which city will you be departing from?
+>>>> request_citys
+24
+user
+Vancouver
+>>>> inform_citys
+24
+wizard
+Perfect, any idea how long you would like to spend in Naples and when you would like to depart?
+>>>> request_dates
+24
+user
+im planning on a three day get away from the 13th to the 16th of August
+>>>> inform_dates
+24
+wizard
+I have an availability on August 19th and it is for a 6 day stay. Are you okay with that?
+>>>> suggest_dates
+24
+user
+ya that sounds interesting can you tell me more about this package?
+>>>> request_package
+24
+wizard
+You would be staying at the Courtyard Resort which is a 3-star hotel, breakfast and wifi included. The flight is a direct flight from Vancouver to Naples on economy class. The total cost is $2349.83USD.
+>>>> inform_hotel_name inform_hotel_category inform_hotel_wifi inform_hotel_breakfast inform_flight_type inform_budget
+24
+user
+are there any other Hotels?
+>>>> request_alternate
+24
+wizard
+There is also the Tower Hotel which is a 4-star hotel, but that one is only available from August 24th to August 28th.
+>>>> suggest_hotel_category inform_dates
+24
+user
+How much would that be?
+>>>> request_budget
+24
+wizard
+$2016.37USD
+>>>> inform_budget
+24
+user
+and is that flight in Business class?
+>>>> request_flight_type
+24
+wizard
+No it would be in economy class
+>>>> inform_flight_type
+24
+user
+can we upgrade it?
+>>>> request_flight_type
+24
+wizard
+Absolutely. The new price would work out to $2568.35USD. Would you like me to book that for you?
+>>>> inform_budget suggest_book
+24
+user
+yes please that sounds perfect! Thank You!
+>>>> affirm_book thanks
+25
+user
+Hi. I live in Busan and I'd like to go to Las Vegas from Wednesday August 17 to Monday September 5. What's available?
+>>>> greeting inform_dates inform_citys
+25
+wizard
+I can get you 7 days in Vancouver, Canada for 2742.44USD. Does this interest you?
+>>>> suggest_dates suggest_citys suggest_budget
+25
+user
+Perhaps another time, I'm really just looking for Las Vegas.
+>>>> negate_dates inform_citys
+25
+wizard
+Do you have a budget in mind?
+>>>> request_budget
+25
+user
+Around 3000USD
+>>>> inform_budget
+25
+wizard
+You can book 10 days in Cairo for 2532.89USD. I cannot find anything in Las Vegas, within your budget.
+>>>> suggest_citys suggest_dates suggest_budget
+25
+user
+How much is a package to Punta Cana?
+>>>> request_package
+25
+wizard
+I can book 12 days in Punta Cana for 3506.84USD.
+>>>> suggest_citys suggest_dates suggest_budget
+25
+user
+I'd like to compare the Cairo and Punta Cana packages. What are the hotels, how many stars, free wifi, free breakfast?
+>>>> request_hotel_category request_hotel_wifi request_hotel_breakfast
+25
+wizard
+In Cairo you would be staying at Mellow Horizon Inn & Suites. It has a 3.0 star rating with free wifi, breakfast, and parking. In Punta Cana you would be staying at Atlantis Gorge. It has a 2.5 star rating with free wifi and breakfast.
+>>>> inform_hotel_category inform_hotel_wifi inform_hotel_breakfast
+25
+user
+I'd like to book the Cairo package. Thank you!
+>>>> affirm_book thanks
+25
+wizard
+Ok, I will book this package. Enjoy your trip.
+>>>> action_book
+26
+user
+Hello, I want to leave from Seoul on August 27 and return on September 9. You can go to Manaus.
+>>>> greeting inform_citys inform_dates
+26
+wizard
+Do you have a maximum budget for this travel package?
+>>>> request_budget
+26
+user
+No budget, I show me an array of packages with varying prices
+>>>> inform_budget request_package
+26
+wizard
+Only one travel package for Mainaus is available for a departure on August 27th at 8:00 a.m. The hotel is very good, with a 6.77/10 guest rating. However, the return date is August 31st at 1:00 a.m. for this travel package. I have no other locations available for these departure and arrival dates. Would you like to book this travel package?
+>>>> suggest_package suggest_citys suggest_dates suggest_hotel_category
+26
+user
+Would I be staying in a room with an ocean front view? How much would it cost to upgrade to such a room?
+>>>> request_hotel_category
+26
+wizard
+I'm sorry, I do not have that information
+>>>> sorry no_result
+26
+user
+Does the hotel have a gym which guests can access?
+>>>> other
+26
+wizard
+Yes there is a gym. Would you like to book this travel package?
+>>>> suggest_book
+26
+user
+Please. Thanks
+>>>> affirm_book thanks
+27
+user
+I'm a polygamist and I'd like to travel with my 6 partners and 1 child to San Juan from Pittsburgh on a budget of 6600 USD
+>>>> inform_member inform_citys inform_budget
+27
+wizard
+I can book 8 days in Pittsburgh for 7 adults and 1 child for 6067.58USD. Would you like to hear more options?
+>>>> suggest_citys suggest_dates suggest_budget suggest_member
+27
+user
+Can you tell me how much the hotel is per night, in case we make a last minute decision to stay one more night?
+>>>> request_budget
+27
+wizard
+The hotel in Pittsburgh would cost 6067.58USD to stay from August 17 to August 24. 
+>>>> inform_budget inform_dates
+27
+user
+How much would it cost from August 17th to August 25th?
+>>>> request_budget inform_dates
+27
+wizard
+I'm sorry, I cannot find any options available in Pittsburgh for August 17 to August 25 that depart from San Juan.
+>>>> sorry no_result
+27
+user
+Ok I'll book the package with 8 days in Pittsburgh from August 17th to the 24th. Thank you.
+>>>> affirm_book thanks
+27
+wizard
+Booking that package for you now - have a good day
+>>>> action_book 
+28
+user
+Hi, send me on a 10 day-trip away from Cairo. I'd like to leave August 15. Send me to Sendai. Money is not object
+>>>> greeting inform_dates inform_citys inform_budget
+28
+wizard
+How many adults and how many children will be travelling?
+>>>> request_member
+28
+user
+Just me, one adult
+>>>> inform_member
+28
+wizard
+I have a trip to Sendai from August 15th at 11:00 a.m. to August 22nd at 7:00 a.m. The guest rating is 8.49/10. You'll be flying economy
+>>>> suggest_dates inform_flight_type
+28
+user
+Would you be able to tell me which airline I would be flying with?
+>>>> other
+28
+wizard
+No, but I can confirm that you will be flying Economy.
+>>>> inform_flight_type
+28
+user
+Would it be possible to upgrade to first class?
+>>>> request_flight_type
+28
+wizard
+I can offer you another package. If you leave on August 17th, I can offer you a hotel with a guest rating of 8.8/10 and you could fly Business Class. The flight would leave from Cairo on Wednesday August 17th at 11:00 a.m. and return Wednesday, August 24th at 7:00 a.m. In addition, the hotel has free wifi. Would you like to book this travel package?
+>>>> suggest_package suggest_dates suggest_citys suggest_book
+28
+user
+Could you tell me if either of these hotels allows pets?
+>>>> other
+28
+wizard
+No, I do not have access to this information. Would you like to book this travel package anyway?
+>>>> suggest_book
+28
+user
+Yes, I would like to book this package.
+>>>> affirm_book
+29
+user
+Good afternoon, I'd like to book a trip with my son from August 18 to August 29. He and I would be leaving from Curitiba. What destinations can you offer?
+>>>> greeting inform_member inform_dates inform_citys
+29
+wizard
+I can offer 11 days in Hamburg for 3550.41USD. You would return on August 28th
+>>>> suggest_dates suggest_budget suggest_citys
+29
+user
+Goodness that's too expensive. Is there anything you can offer around $2600?
+>>>> request_budget
+29
+wizard
+I can also offer 10 days in Vancouver, Canada for 4319.83USD, 9 days in Frankfurt for 4615.35USD, or 12 days in Paris for 4771.39USD.
+>>>> suggest_dates suggest_citys suggest_budget
+29
+user
+Is there anything for 2600USD between the dates of August 18 and August 29th? For less than 10 days?
+>>>> request_budget request_dates
+29
+wizard
+Would you be interested in spending 9 days in Manaus for 1162.21USD?
+>>>> suggest_citys suggest_dates suggest_budget
+29
+user
+Fantastic! What are the departure and arrival dates?
+>>>> request_dates
+29
+wizard
+You would depart on Friday, August 19th and return Saturday, August 28th.
+>>>> inform_dates
+29
+user
+What is the hotel, and how many stars does it have?
+>>>> request_hotel_category
+29
+wizard
+The hotel is called Hotel Mundo and has a 2.5 star rating. I can also offer you 5 days at Scarlet Palms Resort, a 3.5 star rating hotel, for 1358.78USD.
+>>>> inform_hotel_name inform_hotel_category suggest_dates suggest_citys suggest_budget
+29
+user
+I like the Scarlet Palms Resort. What are the departure and arrival dates?
+>>>> inform_citys request_dates
+29
+wizard
+You will depart Wednesday, August 24th 2016 and return home on Sunday, August 28th 2016.
+>>>> inform_dates
+29
+user
+Is there an indoor pool at the hotel?
+>>>> other
+29
+wizard
+There is free wifi and breakfast at the hotel.
+>>>> inform_hotel_wifi inform_hotel_breakfast
+29
+user
+Ok I'll book this one.
+>>>> affirm_book
+29
+wizard
+Sure thing. I will book 5 days at the Scarlet Palms resort for one adult and one child. Thank you.
+>>>> inform_dates inform_citys inform_member thanks
+29
+user
+Thank you!
+>>>> thanks
+30
+user
+Hi, my family and i are booking a trip to Sacramento, can you help us?
+>>>> greeting inform_citys
+30
+wizard
+Sure, where would you be flying out of?
+>>>> request_citys
+30
+user
+we would be coming from San Diego
+>>>> inform_citys
+30
+wizard
+How many people will you be?
+>>>> request_member
+30
+user
+there will be 3 kids and myself (an adult)
+>>>> inform_member
+30
+wizard
+Are there any specific dates you would like to book for?
+>>>> request_dates
+30
+user
+not really
+>>>> inform_dates
+30
+wizard
+how long would you like to stay?
+>>>> request_dates
+30
+user
+depends on the package we get
+>>>> inform_dates
+30
+wizard
+do you have a budget in mind?
+>>>> request_budget
+30
+user
+im willing to spend at most $4200
+>>>> inform_budget
+30
+wizard
+I have something available at the Bronze Luxury Hotel which is a 5-star hotel for $2672.25 departing on Aug 19th and returning on August 26th. Is this suitable?
+>>>> suggest_budget inform_hotel_name inform_hotel_category suggest_dates
+30
+user
+yes actually that would be wonderful can i upgrade the flight?
+>>>> request_flight_type
+30
+wizard
+Of course you can, the new price would be $3064.23USD. Would you like me to book that for you?
+>>>> inform_budget suggest_book
+30
+user
+yes please that sounds perfect! Thank you.
+>>>> affirm_book thanks
+31
+user
+Hi I need a break from Gotham City, the crime rate is just too high. I'd like to go to Hogsmead with 3 kids and 9 adults.
+>>>> inform_citys inform_member
+31
+wizard
+I cannot find any trips from Gotham City to Hogsmead. What about Dallas to Vancouver?
+>>>> no_result suggest_citys
+31
+user
+No thank you, in that case I will stay in Gotham City. Thanks for your help.
+>>>> negate_book
+31
+wizard
+Goodbye.
+>>>> other
+32
+user
+Hello, I have 15 vacation days available between June 1st and August 31st. I am leaving from Theed. I would like to go somewhere with lots of sunshine.
+>>>> greeting inform_citys inform_dates
+32
+wizard
+I have no departures available from Theed. Would you like to pick another departure travel location?
+>>>> no_result request_alternate
+32
+user
+Do you have any departures from Kobe, Japan?
+>>>> inform_citys
+32
+wizard
+No, I don't. Would you like to select another location?
+>>>> negate_citys request_citys
+32
+user
+How about Birmingham City?
+>>>> inform_citys
+32
+wizard
+Sure. Would you like to go to Mexico City? I have a flight available on Wednesday, August 17th at 10:00 a.m. to Tuesday, August 23rd at 4:00 a.m.
+>>>> suggest_citys inform_dates
+32
+user
+What are my options for hotels?
+>>>> other
+32
+wizard
+The best hotel I have is a 3.0 star hotel with a 6.91/10 rating. The flight for this travel package would be from Monday, August 15th at 10:00 a.m. to Sunday, August 21st at 4:00 a.m. The hotel has free parking and free wifi. Would you like to book this travel package?
+>>>> inform_hotel_category suggest_dates inform_hotel_wifi suggest_book
+32
+user
+How much would this package be? Could you offer me a cheaper hotel?
+>>>> request_budget
+32
+wizard
+The cost of this package is 1644.98 USD. Would you like to book this travel package?
+>>>> inform_budget suggest_book
+32
+user
+Could you show me some hotels with lower guest ratings and lower prices?
+>>>> request_hotel_category
+32
+wizard
+Here are a couple of options. The first option is a 3.0 star hotel (the Tropic), with a guest rating of 6.77/10 and a business class flight. The cost is 1002.27 USD. Or, if you prefer, you could choose the same 3.0 star hotel with a guest rating of 6.77/10 (the Tropic) and an economy flight, for 812.69.
+>>>> suggest_hotel_category suggest_flight_type suggest_budget
+32
+user
+What other destinations could you offer me if I'm departing from Birmingham City?
+>>>> request_citys
+32
+wizard
+I could offer you Vancouver, British Columbia, or Porto Alegre, Brazil. Which would you prefer?
+>>>> suggest_citys
+32
+user
+How much are the packages to each city?
+>>>> request_package
+32
+wizard
+Would you like a more expensive or a less expensive travel package?
+>>>> request_package
+32
+user
+I would like to see both options, along with the hotels offered
+>>>> request_hotel_category
+32
+wizard
+I could offer you the package to Porto Alegre, Brazil for 2572.16 USD. The hotel would be the Deluxe Hotel (which has a guest rating of 8.69/10) or the package to Vancouver, British Columbia for 477.93 USD . The hotel would be Parallel Carnaval Bed & Breakfast (which has a guest rating of 8.86/10).
+>>>> suggest_hotel_name suggest_budget suggest_citys suggest_hotel_breakfast
+32
+user
+I can extend my vacation time to the 14th of September, does this open up any new options?
+>>>> inform_dates request_package
+32
+wizard
+I have an even better option available for you. You could travel to Vancouver, Canada for $511.80 USD. You would stay at the Western Ridge. It is a 4.0 star hotel with a 10/10 guest rating. If, however, you would really like to travel to Mexico City, I have a great package for you at only 1168.35 USD. You would stay at the Exalted Willow Resort & Suites. It is a 3.5 star hotel with a 8.37/10 guest rating. Which would you prefer?
+>>>> suggest_citys suggest_budget suggest_hotel_category suggest_package suggest_hotel_name
+32
+user
+Could you tell me which of these resorts offers free wifi?
+>>>> request_hotel_wifi
+32
+wizard
+Both have wifi
+>>>> inform_hotel_wifi
+32
+user
+I am also inquiring about the previous offered packages
+>>>> request_hotel_wifi
+32
+wizard
+All of them do.
+>>>> inform_hotel_wifi
+32
+user
+Could you let me know which class I would be flying in for each destination?
+>>>> request_flight_type
+32
+wizard
+Would you prefer to fly Business Class or Economy?
+>>>> request_flight_type
+32
+user
+I would prefer to fly economy
+>>>> inform_flight_type
+32
+wizard
+The flight to Vancouver and the flight to Mexico City are Economy flights.
+>>>> inform_flight_type
+32
+user
+Then I would like to travel to Vancouver and stay at the Western Ridge
+>>>> inform_citys
+33
+user
+Hello! I live in Munich and I'd like to book any kind of trip between Monday, August 15th and Friday August 26th for 3 adults and 3 kids.
+>>>> greeting inform_citys inform_dates inform_member
+33
+wizard
+I can book 8 days in Toronto for 5844.99USD, 8 days in Vancouver for 6088.3USD, or 8 days in Calgary for 11900.25USD. Do any of these destinations interest you?
+>>>> suggest_citys suggest_budget suggest_dates
+33
+user
+I have a budget of 2800 USD... Do you have anything cheaper? Perhaps for a shorter duration?
+>>>> request_dates request_budget
+33
+wizard
+I can book 9 days in Hamburg for 1296.31USD, 5 days in Rome for 1502.94USD, 5 days in Stuttgart for 2370.61USD, 6 days in Mannheim for 2460.91USD, 9 days in Paris for 2505.13USD, or 6 days in Frankfurt for 2762.18USD.
+>>>> suggest_dates suggest_citys suggest_budget
+33
+user
+I'll book 6 days in Mannheim.
+>>>> inform_dates inform_citys
+33
+wizard
+Ok. I can upgrade your flights to business class for a total of 2715.60USD. Would you like that?
+>>>> suggest_flight_type suggest_budget
+33
+user
+Yes perfect. How is the hotel?
+>>>> request_hotel
+33
+wizard
+The hotel is 5 stars and includes free wifi with an onsite spa.
+>>>> inform_hotel_category inform_hotel_wifi 
+33
+user
+Perfect! I will book this one.
+>>>> affirm_book
+33
+wizard
+You will depart Munich at 9:00 am - August 17th and leave Mannheim at 3:00 am - August 22nd. I will book this trip to The Regal Resort for you.
+>>>> inform_dates inform_citys action_book
+33
+user
+Thank you!
+>>>> thanks
+34
+user
+Hi im from punta cana looking to go on a trip
+>>>> greeting inform_citys
+34
+wizard
+Where would you like to travel to?
+>>>> request_citys
+34
+user
+Im thinking to Fukuoka
+>>>> inform_citys
+34
+wizard
+Did you have any specific dates in mind?
+>>>> request_dates
+34
+user
+maybe the 15th of August until the 20th
+>>>> inform_dates
+34
+wizard
+How many people will be travelling with you?
+>>>> request_member
+34
+user
+just myself
+>>>> inform_member
+34
+wizard
+would the 15th to the 18th work for you?
+>>>> suggest_dates
+34
+user
+where would i be staying?
+>>>> request_hotel
+34
+wizard
+HOTEL Sugoi in Fukuoka
+>>>> inform_hotel_name
+34
+user
+what is the rating
+>>>> request_hotel_category
+34
+wizard
+It is a 3-star hotel and your package includes free wifi
+>>>> inform_hotel_name inform_hotel_wifi
+34
+user
+and what if i were to go to Essen?
+>>>> inform_citys
+34
+wizard
+I have a couple of choices in Essen. Are you looking for a 2-star or a 3-star option?
+>>>> request_hotel_category
+34
+user
+The three star option
+>>>> inform_hotel_category
+34
+wizard
+Your best choice would be the Relaxation Hotel which is a 3-star hotel and includes breakfast and wifi. It is available either from August 15th to August 27 or from August 27th to September 2nd. Do either one of those dates fit into your schedule?
+>>>> suggest_hotel_name suggest_hotel_category suggest_hotel_breakfast suggest_hotel_wifi suggest_dates
+34
+user
+these dates don’t look like they would be compatible with my schedule. Hey, how about going to hiroshima?
+>>>> negate_dates request_citys
+34
+wizard
+I apologize, I have nothing available to Hiroshima. Would you like me to explore other options?
+>>>> sorry no_result request_alternate
+34
+user
+Is there a flight to Santiago
+>>>> inform_citys
+34
+wizard
+I have several that suit your dates.. Your stay would be at the Una casa which is a 3-star hotel and includes free breakfast, wifi and parking, should you wish to rent a car and explore the surrounding areas. The flight departs on August 15th and returns on the 20th.
+>>>> suggest_book suggest_dates suggest_hotel_category suggest_hotel_breakfast suggest_hotel_wifi
+34
+user
+can you compare the price of this and the one to the package in St. Loius
+>>>> request_budget request_package
+34
+wizard
+The package to Santiago is $2455.37 as opposed to the package to Essen which would be $3016.94. Please keep in mind that the trip to Essen is a longer trip though.
+>>>> suggest_package suggest_budget
+34
+user
+and how much is the trip to Fukuoka and what are the dates?
+>>>> request_dates
+34
+wizard
+That package was $3794 based on economy class. It departed on August 15th with a return date of August 18th.
+>>>> inform_budget inform_flight_type inform_dates
+34
+user
+which of these have the best rated hotels?
+>>>> request_hotel
+34
+wizard
+In Fukuoka, the hotel is a 3-star, in Essen you have the option of a 2-star at $3016.94 or a 3-star at $3073.16 and in Santiago the hotel has a 3-star rating.
+>>>> suggest_hotel_category suggest_budget suggest_citys
+34
+user
+it seems to me that the packages in Essen are the best offer. So what are the dates?
+>>>> inform_dates inform_citys
+34
+wizard
+Are you interested in the 2-star option or the 3-star option?
+>>>> request_hotel_category
+34
+user
+the 3 star hotel seems to be the best how much would it be to book a business class flight?
+>>>> inform_hotel_category request_flight_type
+34
+wizard
+If you are looking for a business class flight, I only have one package that has the availability. It would be at the Motel Ivory which is the 2-star hotel and is only available from August 26 to September 1st. The total price for that package is $3314.99.
+>>>> suggest_flight_type suggest_hotel_category suggest_dates suggest_budget
+34
+user
+If i were to choose economy class what would it be?
+>>>> request_flight_type
+34
+wizard
+At the 2-star Motel Ivory Safari, for your original departure date of August 15 it is $3016.94. At the 3-star Relaxation Hotel, it is $3073.16. Is Essen your final choice for the destination?
+>>>> suggest_hotel_category suggest_dates suggest_budget request_citys
+34
+user
+yes i believe it will be. lets book the 3 star hotel
+>>>> inform_citys inform_hotel_category
+34
+wizard
+Fantastic. Let me get all your information so that we can finalize your reservation.
+>>>> other
+34
+user
+sounds perfect! thank you!
+>>>> thanks
+35
+user
+Hey! You can help me by finding a trip to Philadelphia from Maceio.
+>>>> greeting inform_citys
+35
+wizard
+In Philadelphia you can stay at a 2.5 star hotel for 11 days. As for Fukuoka, 11 days at a 2.5 star hotel would cost 4719.74USD. I can offer 14 days in Essen for 3787.14USD; this would be at a 2.0 star hotel. 4 days at a 2.0 star hotel in San Antonio would cost 2311.48USD.
+>>>> suggest_citys suggest_budget suggest_hotel_category
+35
+user
+Let's start with Philadelphia, how much is it I upgrade to business class?
+>>>> request_budget inform_flight_type inform_citys
+35
+wizard
+For this hotel in Philadelphia, it would cost 3340.56USD to travel from Maceio by business class.
+>>>> suggest_budget inform_citys inform_flight_type
+35
+user
+And for a four star hotel?
+>>>> request_hotel_category
+35
+wizard
+Sorry, I only have 2.5 star hotels available in Philadelphia.
+>>>> sorry inform_hotel_category inform_citys
+35
+user
+Let's see about Fukuoka upgraded to business class and a four star hotel.
+>>>> request_flight_type request_hotel_category
+35
+wizard
+I have a 3.5 star hotel available in Fukuoka, The Oceanside Hotel. It has a guest rating of 8.22/10. I could book you a business class trip for 11 days at 6228.88USD.
+>>>> suggest_hotel_category suggest_flight_type suggest_budget suggest_dates
+35
+user
+Is this hotel in the downtown area of the city?
+>>>> request_hotel
+35
+wizard
+I do not know the location of The Oceanside Hotel within the city of Fukuoka, sorry.
+>>>> no_result sorry
+35
+user
+Is there a spa in the hotel?
+>>>> other
+35
+wizard
+There is no spa in the hotel, but there is free wifi.
+>>>> inform_hotel_wifi
+35
+user
+I will keep this option in mind. How about Essen, do you have anything less than 14 days?
+>>>> inform_dates
+35
+wizard
+Do you have a length of stay in mind?
+>>>> request_dates
+35
+user
+Around 11 days.
+>>>> inform_dates
+35
+wizard
+Sorry, I am only coming up with 14 day trips to Essen. Perhaps another nearby departure city would work?
+>>>> sorry no_result suggest_citys
+35
+user
+Good idea. What about Canoas?
+>>>> inform_citys
+35
+wizard
+It seems that Canoas is not in my database.
+>>>> no_result
+35
+user
+What about porto alegre
+>>>> inform_citys
+35
+wizard
+I have multiple 5 day options available from Porto to Essen. 
+>>>> suggest_dates
+35
+user
+I would prefer 11 days
+>>>> inform_dates
+35
+wizard
+Do you have a departure date in mind? Or an approximate departure date?
+>>>> request_dates
+35
+user
+Anytime in the month of September
+>>>> inform_dates
+35
+wizard
+Unfortunately I only have 5 days options leaving from Porto available at this time.
+>>>> sorry suggest_dates suggest_citys
+35
+user
+In that case, let's go back to the Fukuoka 11 day package.
+>>>> request_package
+35
+wizard
+Would you like me to explore your Fukuoka options leaving from Porto Alegre?
+>>>> suggest_citys
+35
+user
+Yes please.
+>>>> affirm_citys
+35
+wizard
+I can offer 13 days in Fukuoka for 5777.48USD.
+>>>> suggest_dates suggest_citys suggest_budget
+35
+user
+In that case, I will take the 11 day package. One more thing, is there free breakfast?
+>>>> affirm_package request_hotel_breakfast
+35
+wizard
+The 11 day trip to Fukuoka from Maceia is also during August. However, the Oceanside Hotel does provide free breakfast!
+>>>> inform_hotel_breakfast inform_dates
+35
+user
+ I'll book this one. Thank you, friend!
+>>>> affirm_book thanks
+35
+wizard
+Great, thank you!
+>>>> thanks
