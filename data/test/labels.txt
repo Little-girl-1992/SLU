@@ -1,52 +1,33 @@
-sorry # 抱歉
-other # 其他
-thanks # 感谢
 greeting # 问候
-no_result # 没有结果
+sorry # 抱歉
+thanks # 感谢
+other # 其他
+
+......预订相关.......
+request_book # 建议预定 
 action_book # 执行预定
-affirm # 肯定 回答suggests*****************************
 affirm_book # 肯定预定
-affirm_datas # 肯定时间
-affirm_citys # 肯定城市
-affirm_budget # 肯定预算
-affirm_package # 肯定套餐
-affirm_hotel_category # 肯定酒店等级
-negate # 否定 回答suggests****************************
-negate_book # 否定预定
-negate_dates # 否定时间
-negate_citys # 否定城市
-negate_budget # 否定预算
-inform # 意愿和打算和告知 回答request**************************
-inform_budget # 提出预算
-inform_citys # 提出城市
-inform_dates # 提出时间
-inform_member # 提出成员个数
-inform_flight_type # 告知航班类型
-inform_hotel_name # 告知酒店名称
-inform_hotel_wifi # 告知酒店wifi
-inform_hotel_breakfast # 提出酒店早餐
-inform_hotel_category # 提出酒店等级
-request # 不知道有什么选择*****************************
-request_activities # 询问活动
-request_alternate # 询问备选
-request_package # 询问套餐
-request_dates # 询问时间
-request_citys # 询问城市
-request_budget # 询问预算
-request_member # 询问成员个数
-request_flight_type # 询问航班类型
-request_hotel # 询问酒店
-request_hotel_breakfast # 询问酒店早餐
-request_hotel_category # 询问酒店等级
-request_hotel_wifi # 询问酒店wifi
-suggest # 这个**怎么样********************************
-suggest_book # 建议预定
-suggest_citys # 这个城市怎么样
-suggest_dates # 这个时间怎么样
-suggest_budget # 这个预算怎么样
-suggest_member
-suggest_package
-suggest_hotel_name # 告知酒店名
-suggest_hotel_wifi # 告知酒店是否提供wifi
-suggest_hotel_category # 这个酒店等级怎么样
-suggest_hotel_breakfast # 告知酒店是否提供早餐
+negate_book # 否定预测
+negate_info # 否定的回答
+不打算/不喜欢/没有结果/不提供 （去哪，和谁，什么时候，花多少钱）去旅行
+affirm_info # 肯定的回答
+打算/喜欢（去哪，和谁，什么时候，花多少钱）去旅行
+
+......旅行相关.......
+inform_trip_info # 告知旅行信息  告诉客服自己的旅行打算（去哪，和谁，什么时候，花多少钱）
+request_trip_info # 询问旅行信息不提供确定信息  询问客户的旅行计划（去哪，和谁，什么时候，花多少钱）
+（你考虑其他地方？）（你喜欢A还是B?）（你想选A?）（感兴趣？）
+
+......套餐相关.......
+inform_package_info # 告知套餐信息  一定是客服回答，当被问或者已经确定套餐时，告知客户这个套餐里包括什么
+
+request_package_info # 询问套餐信息  客户询问是否有符合的套餐或者这个套餐包括什么
+（关于A有什么可选）
+
+......航班相关.......
+inform_flight_info # 告知航班信息
+request_flight_info # 询问航班信息
+
+......酒店相关.......
+inform_hotel_info # 告知酒店信息
+request_hotel_info # 询问酒店信息

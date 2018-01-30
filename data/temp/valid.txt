@@ -1,268 +1,392 @@
-34
+56
 user
-Hi im from punta cana looking to go on a trip
->>>> greeting inform_citys
-34
+Hi. I need to book a vacation to Long Beach between August 25 and September 3. Departure is from Paris
+>>>> greeting inform_trip_info
+56
 wizard
-Where would you like to travel to?
->>>> request_citys
-34
+Would you like to depart Paris on September 6th?
+>>>> request_trip_info
+56
 user
-Im thinking to Fukuoka
->>>> inform_citys
-34
+Preferably by the 3rd. Is there anything available?
+>>>> inform_trip_info request_package_info
+56
 wizard
-Did you have any specific dates in mind?
->>>> request_dates
-34
+Sorry, looks like there is nothing available from Paris to Long Beach on September 3rd.
+>>>> sorry negate_info
+56
 user
-maybe the 15th of August until the 20th
->>>> inform_dates
-34
+I'm not quite sure I understand, is there anything available leaving Long Beach to go to Paris between August 25 and September 3rd?
+>>>> request_package_info
+56
 wizard
-How many people will be travelling with you?
->>>> request_member
-34
+Would you like to depart Paris on September 6th?
+>>>> request_trip_info
+56
 user
-just myself
->>>> inform_member
-34
+No. I would like to leave Long Beach around the 25th of August to go to Paris for some reason. What is so confusing about that!
+>>>> negate_info inform_trip_info
+56
 wizard
-would the 15th to the 18th work for you?
->>>> suggest_dates
-34
+You can leave Long Beach, USA and go to Paris, France on Tuesday, August 30th. Will I book this?
+>>>> inform_package_info request_book
+56
 user
-where would i be staying?
->>>> request_hotel
-34
+Finally! No, don't book yet, I would like to know more about the hotel. Is there free breakfast?
+>>>> negate_info request_hotel_info
+56
 wizard
-HOTEL Sugoi in Fukuoka
->>>> inform_hotel_name
-34
+There is free wifi.
+>>>> inform_hotel_info
+56
 user
-what is the rating
->>>> request_hotel_category
-34
+Look buddy, is there free breakfast or not? Tell me, am I gonna get eggs, toast, cereal, etc? You know? The good stuff?
+>>>> request_hotel_info
+56
 wizard
-It is a 3-star hotel and your package includes free wifi
->>>> inform_hotel_name inform_hotel_wifi
-34
+There is free wifi at the hotel. 
+>>>> inform_hotel_info
+56
 user
-and what if i were to go to Essen?
->>>> inform_citys
-34
+What is the price of this toastless package?
+>>>> request_package_info
+56
 wizard
-I have a couple of choices in Essen. Are you looking for a 2-star or a 3-star option?
->>>> request_hotel_category
-34
+This package costs 2191.55USD.
+>>>> inform_package_info
+56
 user
-The three star option
->>>> inform_hotel_category
-34
+Is this the cheapest option?
+>>>> request_package_info
+56
 wizard
-Your best choice would be the Relaxation Hotel which is a 3-star hotel and includes breakfast and wifi. It is available either from August 15th to August 27 or from August 27th to September 2nd. Do either one of those dates fit into your schedule?
->>>> suggest_hotel_name suggest_hotel_category suggest_hotel_breakfast suggest_hotel_wifi suggest_dates
-34
+Yes, this is the cheapest option from Long Beach to Paris.
+>>>> inform_package_info
+56
 user
-these dates don’t look like they would be compatible with my schedule. Hey, how about going to hiroshima?
->>>> negate_dates request_citys
-34
+And the hotel has how many stars?
+>>>> request_hotel_info
+56
 wizard
-I apologize, I have nothing available to Hiroshima. Would you like me to explore other options?
->>>> sorry no_result request_alternate
-34
+Muse Hotel has 2.0 stars.
+>>>> inform_hotel_info
+56
 user
-Is there a flight to Santiago
->>>> inform_citys
-34
+Ok I will book this one.
+>>>> affirm_book
+56
 wizard
-I have several that suit your dates.. Your stay would be at the Una casa which is a 3-star hotel and includes free breakfast, wifi and parking, should you wish to rent a car and explore the surrounding areas. The flight departs on August 15th and returns on the 20th.
->>>> suggest_book suggest_dates suggest_hotel_category suggest_hotel_breakfast suggest_hotel_wifi
-34
+Great. You will leave Paris on September 7th.
+>>>> inform_package_info
+56
 user
-can you compare the price of this and the one to the package in St. Loius
->>>> request_budget request_package
-34
+What do you mean?
+>>>>
+56
 wizard
-The package to Santiago is $2455.37 as opposed to the package to Essen which would be $3016.94. Please keep in mind that the trip to Essen is a longer trip though.
->>>> suggest_package suggest_budget
-34
+You will depart from Paris at 3:00 am on Wednesday, September 7th.
+>>>> inform_package_info
+56
 user
-and how much is the trip to Fukuoka and what are the dates?
->>>> request_dates
-34
+I will not book this trip. Goodbye.
+>>>> negate_info
+56
 wizard
-That package was $3794 based on economy class. It departed on August 15th with a return date of August 18th.
->>>> inform_budget inform_flight_type inform_dates
-34
-user
-which of these have the best rated hotels?
->>>> request_hotel
-34
-wizard
-In Fukuoka, the hotel is a 3-star, in Essen you have the option of a 2-star at $3016.94 or a 3-star at $3073.16 and in Santiago the hotel has a 3-star rating.
->>>> suggest_hotel_category suggest_budget suggest_citys
-34
-user
-it seems to me that the packages in Essen are the best offer. So what are the dates?
->>>> inform_dates inform_citys
-34
-wizard
-Are you interested in the 2-star option or the 3-star option?
->>>> request_hotel_category
-34
-user
-the 3 star hotel seems to be the best how much would it be to book a business class flight?
->>>> inform_hotel_category request_flight_type
-34
-wizard
-If you are looking for a business class flight, I only have one package that has the availability. It would be at the Motel Ivory which is the 2-star hotel and is only available from August 26 to September 1st. The total price for that package is $3314.99.
->>>> suggest_flight_type suggest_hotel_category suggest_dates suggest_budget
-34
-user
-If i were to choose economy class what would it be?
->>>> request_flight_type
-34
-wizard
-At the 2-star Motel Ivory Safari, for your original departure date of August 15 it is $3016.94. At the 3-star Relaxation Hotel, it is $3073.16. Is Essen your final choice for the destination?
->>>> suggest_hotel_category suggest_dates suggest_budget request_citys
-34
-user
-yes i believe it will be. lets book the 3 star hotel
->>>> inform_citys inform_hotel_category
-34
-wizard
-Fantastic. Let me get all your information so that we can finalize your reservation.
->>>> other
-34
-user
-sounds perfect! thank you!
+Thank you! Goodbye! 
 >>>> thanks
-35
+57
 user
-Hey! You can help me by finding a trip to Philadelphia from Maceio.
->>>> greeting inform_citys
-35
+Hi! I'd like to do some vacation shopping!
+>>>> greeting inform_trip_info
+57
 wizard
-In Philadelphia you can stay at a 2.5 star hotel for 11 days. As for Fukuoka, 11 days at a 2.5 star hotel would cost 4719.74USD. I can offer 14 days in Essen for 3787.14USD; this would be at a 2.0 star hotel. 4 days at a 2.0 star hotel in San Antonio would cost 2311.48USD.
->>>> suggest_citys suggest_budget suggest_hotel_category
-35
+Sure thing! That's what I'm here for! Where are you located?
+>>>> request_trip_info
+57
 user
-Let's start with Philadelphia, how much is it I upgrade to business class?
->>>> request_budget inform_flight_type inform_citys
-35
+I live in Campinas, and I'd like to travel from August 25 the September 7. Let's start by looking at Vancouver!
+>>>> inform_trip_info request_package_info
+57
 wizard
-For this hotel in Philadelphia, it would cost 3340.56USD to travel from Maceio by business class.
->>>> suggest_budget inform_citys inform_flight_type
-35
+Great! You could spend 10 days in Vancouver for 3051.29USD.
+>>>> inform_package_info
+57
 user
-And for a four star hotel?
->>>> request_hotel_category
-35
+Is there free breakfast, wifi or parking?
+>>>> request_hotel_info
+57
 wizard
-Sorry, I only have 2.5 star hotels available in Philadelphia.
->>>> sorry inform_hotel_category inform_citys
-35
+Yes- all three!
+>>>> inform_hotel_info
+57
 user
-Let's see about Fukuoka upgraded to business class and a four star hotel.
->>>> request_flight_type request_hotel_category
-35
+How many stars?
+>>>> request_hotel_info
+57
 wizard
-I have a 3.5 star hotel available in Fukuoka, The Oceanside Hotel. It has a guest rating of 8.22/10. I could book you a business class trip for 11 days at 6228.88USD.
->>>> suggest_hotel_category suggest_flight_type suggest_budget suggest_dates
-35
+The hotel has a 4.0 star rating !
+>>>> inform_hotel_info
+57
 user
-Is this hotel in the downtown area of the city?
->>>> request_hotel
-35
+Great! Now what about La Paz?
+>>>> request_package_info
+57
 wizard
-I do not know the location of The Oceanside Hotel within the city of Fukuoka, sorry.
->>>> no_result sorry
-35
+You can travel to La Paz from Campinas from August 27th to September 2nd.
+>>>> inform_package_info
+57
 user
-Is there a spa in the hotel?
->>>> other
-35
+I would like some details about this one, please. For how much and how many days?
+>>>> request_package_info
+57
 wizard
-There is no spa in the hotel, but there is free wifi.
->>>> inform_hotel_wifi
-35
+You will spend 8 days in La Paz for 2758.9USD.
+>>>> inform_package_info
+57
 user
-I will keep this option in mind. How about Essen, do you have anything less than 14 days?
->>>> inform_dates
-35
+What amenities does the hotel have?
+>>>> request_hotel_info
+57
 wizard
-Do you have a length of stay in mind?
->>>> request_dates
-35
+This hotel has free wifi, free breakfast, and free parking.
+>>>> inform_hotel_info
+57
 user
-Around 11 days.
->>>> inform_dates
-35
+Can we take a look at trips to Kyoto?
+>>>> request_package_info
+57
 wizard
-Sorry, I am only coming up with 14 day trips to Essen. Perhaps another nearby departure city would work?
->>>> sorry no_result suggest_citys
-35
+Would you like to travel to Kyoto between August 25-30 or September 1-6?
+>>>> request_trip_info
+57
 user
-Good idea. What about Canoas?
->>>> inform_citys
-35
+Let's look at August 25 to 30th.
+>>>> inform_trip_info
+57
 wizard
-It seems that Canoas is not in my database.
->>>> no_result
-35
+I could also do August 26-31, August 27-Sept 1, or August 30-September 4. Do any of those dates interest you?
+>>>> request_trip_info
+57
 user
-What about porto alegre
->>>> inform_citys
-35
+Yes actually, I prefer August 27 to September 1.
+>>>> inform_trip_info
+57
 wizard
-I have multiple 5 day options available from Porto to Essen. 
->>>> suggest_dates
-35
+Ok! There is a 3 star hotel available for 8135.48USD for those dates.
+>>>> inform_package_info
+57
 user
-I would prefer 11 days
->>>> inform_dates
-35
+Great! what are the options for August 26 to 31?
+>>>> request_package_info
+57
 wizard
-Do you have a departure date in mind? Or an approximate departure date?
->>>> request_dates
-35
+I have a different 3 star hotel for those dates at 5218.82USD.
+>>>> inform_package_info inform_hotel_info
+57
 user
-Anytime in the month of September
->>>> inform_dates
-35
+Wow considerably cheaper! Can you tell me about the hotel's amenities?
+>>>> request_hotel_info
+57
 wizard
-Unfortunately I only have 5 days options leaving from Porto available at this time.
->>>> sorry suggest_dates suggest_citys
-35
+That hotel has free wifi and free breakfast.
+>>>> inform_hotel_info
+57
 user
-In that case, let's go back to the Fukuoka 11 day package.
->>>> request_package
-35
+Great! I also want to look at Puebla for the same dates.
+>>>> request_package_info
+57
 wizard
-Would you like me to explore your Fukuoka options leaving from Porto Alegre?
->>>> suggest_citys
-35
+I can book August 25-September 5 in Puebla for 2320.70USD.
+>>>> inform_package_info
+57
 user
-Yes please.
->>>> affirm_citys
-35
+The Puebla package is the cheapest, I'd like to know more about it. The hotel has how many stars?
+>>>> request_package_info request_hotel_info
+57
 wizard
-I can offer 13 days in Fukuoka for 5777.48USD.
->>>> suggest_dates suggest_citys suggest_budget
-35
+Sure thing! The hotel is 4.0 stars.
+>>>> inform_hotel_info
+57
 user
-In that case, I will take the 11 day package. One more thing, is there free breakfast?
->>>> affirm_package request_hotel_breakfast
-35
+I really like this package. Is there a spa?
+>>>> affirm_info request_hotel_info
+57
 wizard
-The 11 day trip to Fukuoka from Maceia is also during August. However, the Oceanside Hotel does provide free breakfast!
->>>> inform_hotel_breakfast inform_dates
-35
+No spa unfortunately. Would you like me to look into options in Puebla with a spa?
+>>>> inform_hotel_info request_trip_info
+57
 user
- I'll book this one. Thank you, friend!
->>>> affirm_book thanks
-35
+If you don't mind yes please!
+>>>> affirm_info
+57
 wizard
-Great, thank you!
+Sorry, there are no options available in Puebla with a spa.
+>>>> sorry negate_info
+57
+user
+That's ok, let's go back to the 4.0 star hotel. Is there free wifi and breakfast? I won't have a car, so I don't need free parking.
+>>>> request_hotel_info
+57
+wizard
+The 4.0 star hotel in Puebla has free wifi and free breakfast!
+>>>> inform_hotel_info
+57
+user
+Great! What's the name of the hotel? I'd like to give them a call.
+>>>> request_hotel_info
+57
+wizard
+Absolutely! Los Campeones is the name.
+>>>> inform_hotel_info
+57
+user
+The hotel is great. I will book this one please!
+>>>> affirm_book
+57
+wizard
+I will go ahead and book that for you.
+>>>> action_book
+57
+user
+Thanks!
 >>>> thanks
+58
+user
+Hi i am planning my honeymoon for my wife and myself. I am looking for the best deal but it needs to be the best time! can you helo us?
+>>>> greeting inform_trip_info
+58
+wizard
+Absolutely. Where would you like to go and from what city would you be departing?
+>>>> request_trip_info
+58
+user
+we’re getting married in San Jose and we want to leave on August 27th. we have already spent so much on the wedding and only have $2700 to sepnd
+>>>> inform_trip_info
+58
+wizard
+We do have a very nice package available with a departure date of August 27 to Montreal. This package includes free wifi, parking and breakfast and you would both fly on business class. The total cost of this package is within your budget at only $1156.55USD.
+>>>> inform_package_info inform_flight_info
+58
+user
+is anything a little warmer perhaps?
+>>>> request_package_info
+58
+wizard
+From that city, I only have this package available. Are you able to leave from a different city?
+>>>> inform_package_info request_trip_info
+58
+user
+Honestly we cant but that package seems fine as long as we will be together what activities or options does this package have?
+>>>> request_package_info
+58
+wizard
+Your package includes free wifi, parking and complimentary breakfast every morning.
+>>>> inform_package_info
+58
+user
+That sounds amazing thank you! and again how much will that be?
+>>>> affirm_info thanks request_package_info
+58
+wizard
+If you fly business class, the total cost will be 1156.55USD. Should I go ahead and book that for you?
+>>>> inform_package_info inform_flight_info request_book
+58
+user
+yes please that sounds amazing!
+>>>> affirm_book
+59
+user
+Hey Im looking for a nice get away can you help me?
+>>>> greeting
+59
+wizard
+Definitely, how many people will you be traveling with?
+>>>> request_trip_info
+59
+user
+just myself!  im from North Vancouver
+>>>> inform_trip_info
+59
+wizard
+I can offer you flights to San Juan, Montreal, Alexandria, Sydney, Cleveland or Seattle.
+>>>> inform_package_info
+59
+user
+SEATTLE!  what options do we have there?
+>>>> request_package_info
+59
+wizard
+I have one package for Seattle from the 27th of August to the 6th of September. You will be staying at the Fairyland, a 3.5-star hotel with a 0/10 guest rating, free wifi and free parking. This trip will total 569.14USD.
+>>>> inform_package_info inform_hotel_info
+59
+user
+I have some specific dates due to my work i can only be gone from  August 15th until september 2nd
+>>>> inform_trip_info
+59
+wizard
+I have several Seattle packages for the 27th of August to the 6th of September. You have  a choice between the Fairyland or the Emerald, a 5-star hotel with a 8.8/10 guest rating and free parking. You also have a choice between a business flight or an economy flight.
+>>>> inform_package_info inform_hotel_info inform_flight_info
+59
+user
+is there any possibility of finding a package where i can be back on the 2nd?
+>>>> request_package_info
+59
+wizard
+Unfortunately I do not have any packages matching those dates.
+>>>> negate_info
+59
+user
+thats very upsetting seems like i just wont take a vacation. thanks anyways'
+>>>> thanks negate_info
+60
+user
+The police are after me, and I need to leave Kobe between August 27 and September 2.
+>>>> inform_trip_info
+60
+wizard
+Hi! I can help you with booking a trip from Kobe for your requested dates. Now, where would you like to go today?
+>>>> greeting request_trip_info
+60
+user
+Take me anywhere, but I only have $4600 cash.
+>>>> inform_trip_info
+60
+wizard
+I can book you four days in Sapporo for 200.92USD!
+>>>> inform_package_info
+60
+user
+Four days may not be long enough... what else do you have?
+>>>> inform_trip_info request_package_info
+60
+wizard
+How about 6 days in San Jose for 2045.99USD?
+>>>> inform_package_info
+60
+user
+That should be alright. Does the room have a safe?
+>>>> request_hotel_info
+60
+wizard
+This four star hotel has free wifi, free parking, and free breakfast!
+>>>> inform_hotel_info
+60
+user
+Perfect! So if I steal a car I can park it there! I'll have to call the hotel about the safe, what is the name of the hotel?
+>>>> request_hotel_info
+60
+wizard
+It's the Tranquil Seaside Inn.
+>>>> inform_hotel_info
+60
+user
+And free parking?
+>>>> request_hotel_info
+60
+wizard
+Yes! Tranquil Seaside Inn is the hotel I quoted for you before.
+>>>> inform_hotel_info
+60
+user
+Oh yes ok. This one sounds good to me!
+>>>> affirm_info

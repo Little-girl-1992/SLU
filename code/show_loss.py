@@ -9,7 +9,6 @@ from keras.layers.core import Dense, Dropout, Activation
 from keras.optimizers import SGD, Adam, RMSprop
 from keras.utils import np_utils
 import matplotlib.pyplot as plt
-np.random.seed(1024)  # for reproducibility
 
 
 # 写一个LossHistory类，保存loss和acc
@@ -22,15 +21,15 @@ class LossHistory(keras.callbacks.Callback):
 
     def on_batch_end(self, batch, logs={}):
         self.losses['batch'].append(logs.get('loss'))
-        self.accuracy['batch'].append(logs.get('acc'))
+        self.accuracy['batch'].append(logs.get('binary_accuracy'))
         self.val_loss['batch'].append(logs.get('val_loss'))
-        self.val_acc['batch'].append(logs.get('val_acc'))
+        self.val_acc['batch'].append(logs.get('val_binary_accuracy'))
 
     def on_epoch_end(self, batch, logs={}):
         self.losses['epoch'].append(logs.get('loss'))
-        self.accuracy['epoch'].append(logs.get('acc'))
+        self.accuracy['epoch'].append(logs.get('binary_accuracy'))
         self.val_loss['epoch'].append(logs.get('val_loss'))
-        self.val_acc['epoch'].append(logs.get('val_acc'))
+        self.val_acc['epoch'].append(logs.get('val_binary_accuracy'))
 
     def loss_plot(self, loss_type, pic_path=''):
         iters = range(len(self.losses[loss_type]))

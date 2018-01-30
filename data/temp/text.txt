@@ -164,7 +164,8 @@ I have a departure from Toronto to Calgary  on August 17 returning on August 24.
 >>>>
 2
 user
-No sorry i was planning on getting a tan this vacation. Thanks, is there anywhere else?
+No sorry i was planning on getting a tan this vacation. Thanks, is there anywhere else? Thank you
+is there anywhere else?
 >>>>
 2
 wizard
@@ -3256,7 +3257,7 @@ The price is $9647.3USD.  You would depart on August 24th  and return on Septemb
 >>>>
 51
 user
-yes that would work perfectly! please book it
+yes that would work perfectly! :slightly_smiling_face: please book it
 >>>>
 51
 wizard
@@ -4457,7 +4458,7 @@ yes please! that would be wonderful
 >>>>
 66
 wizard
-Consider it done Have a nice day.
+Consider it done :slightly_smiling_face: Have a nice day.
 >>>>
 66
 user
@@ -4973,7 +4974,7 @@ Let's book it! too good of a deal!
 >>>>
 76
 wizard
-Sure thing Enjoy your stay!
+Sure thing :slightly_smiling_face: Enjoy your stay!
 >>>>
 76
 user
@@ -5653,7 +5654,7 @@ yes please! thanks!
 >>>>
 89
 wizard
-Consider it done Thank you for travelling!
+Consider it done :slightly_smiling_face: Thank you for travelling!
 >>>>
 89
 user
@@ -9455,7 +9456,7 @@ Great! Your reservation is complete, you will receive a confirmation email short
 >>>>
 158
 user
-thank you wozbot toodles
+thank you wozbot :slightly_smiling_face: toodles
 >>>>
 159
 user
@@ -12774,7 +12775,7 @@ ok, is that for all 4 of us?
 >>>>
 212
 wizard
-Yes it is would you like me to book that for you? or i can Upgrade you to Business class for $3731
+Yes it is :slightly_smiling_face: would you like me to book that for you? or i can Upgrade you to Business class for $3731
 >>>>
 212
 user
@@ -13208,7 +13209,7 @@ Hi there! How can I help you today?
 >>>>
 220
 user
-I would like to find a trip to Punta Cana I am leaving from Birmingham :slightly_smiling_face:
+I would like to find a trip to Punta Cana :slightly_smiling_face: I am leaving from :slightly_smiling_face: Birmingham :slightly_smiling_face:
 >>>>
 221
 user
@@ -13572,7 +13573,7 @@ Book it!
 >>>>
 225
 wizard
-Sure thing Thank you for using my services today.
+Sure thing :slightly_smiling_face: Thank you for using my services today.
 >>>>
 226
 user
@@ -13824,7 +13825,7 @@ That sounds great dude, you are really helping me out here. You have no idea how
 >>>>
 228
 wizard
-I am happy to help Would you like me to book this package for you at the Courtyard Resort in Naples as I have earlier described it?
+I am happy to help :slightly_smiling_face: Would you like me to book this package for you at the Courtyard Resort in Naples as I have earlier described it?
 >>>>
 228
 user
@@ -14384,7 +14385,7 @@ Yes please!
 >>>>
 237
 wizard
-You’re all set Enjoy!
+You’re all set :slightly_smiling_face: Enjoy!
 >>>>
 237
 user
@@ -14644,7 +14645,7 @@ no budget but i want to go on August 17th to the 31st
 >>>>
 242
 wizard
-Ok, let me see what I can do Will you be travelling alone?
+Ok, let me see what I can do :slightly_smiling_face: Will you be travelling alone?
 >>>>
 242
 user
@@ -14880,7 +14881,7 @@ I can leave from Detroit
 >>>>
 245
 wizard
-Awesome Would you like to travel from August 30th to September 9th?
+Awesome :slightly_smiling_face: Would you like to travel from August 30th to September 9th?
 >>>>
 245
 user
@@ -15212,7 +15213,7 @@ Looks like I've lucked out then, Denver here I come!!!
 >>>>
 250
 wizard
-Wonderful So I will go ahead and book that for you?
+Wonderful :slightly_smiling_face: So I will go ahead and book that for you?
 >>>>
 250
 user
@@ -15368,7 +15369,7 @@ Hi! I have 2 possible big golf tournaments coming up and I want to see which one
 >>>>
 253
 wizard
-Ok, sure thing Where are you departing from?
+Ok, sure thing :slightly_smiling_face: Where are you departing from?
 >>>>
 253
 user
@@ -16804,7 +16805,7 @@ user
 >>>>
 276
 wizard
-What beautiful names Where are you leaving from?
+What beautiful names :slightly_smiling_face: Where are you leaving from?
 >>>>
 276
 user
@@ -17883,7 +17884,7 @@ i'll take that one
 >>>>
 292
 wizard
-Great You will be staying at Hotel Vanilla, a 3.0 star hotel located near the beach, airport, park, and university. You will have free parking, breakfast, and wifi included in your package. I booked the package
+Great :slightly_smiling_face: You will be staying at Hotel Vanilla, a 3.0 star hotel located near the beach, airport, park, and university. You will have free parking, breakfast, and wifi included in your package. I booked the package
 >>>>
 292
 user
@@ -18102,7 +18103,7 @@ k
 >>>>
 297
 wizard
-Great Would you like to know some more information about this package before I book?
+Great :slightly_smiling_face: Would you like to know some more information about this package before I book?
 >>>>
 297
 user
@@ -18134,7 +18135,7 @@ ok lets book it!!
 >>>>
 297
 wizard
-Great Consider it done
+Great :slightly_smiling_face: Consider it done
 >>>>
 297
 user
@@ -18290,7 +18291,7 @@ hello, please find me a vacation between saturday august 27 2016 and wednesday s
 >>>>
 300
 wizard
-Ok! Absolutely I can book you a trip to Rome from September 2-7 for only $407.55 if you are interested.
+Ok! Absolutely :slightly_smiling_face: I can book you a trip to Rome from September 2-7 for only $407.55 if you are interested.
 >>>>
 300
 user
@@ -18314,7 +18315,7 @@ ok
 >>>>
 300
 wizard
-Wonderful, all booked Enjoy your stay.
+Wonderful, all booked :slightly_smiling_face: Enjoy your stay.
 >>>>
 300
 user
@@ -18391,7 +18392,7 @@ hello
 >>>>
 302
 wizard
-Hi there How can I help you today?
+Hi there :slightly_smiling_face: How can I help you today?
 >>>>
 302
 user
@@ -18651,7 +18652,7 @@ i will go to calgary
 >>>>
 306
 wizard
-Great I will book that for you
+Great :slightly_smiling_face: I will book that for you
 >>>>
 307
 user
@@ -19099,7 +19100,7 @@ ok I will take that
 >>>>
 314
 wizard
-Great I will book that for you
+Great :slightly_smiling_face: I will book that for you
 >>>>
 314
 user
@@ -19251,7 +19252,7 @@ Thanks again! :slightly_smiling_face:
 >>>>
 317
 user
-Hello hello I'm planning a honeymoon, and I want to go to Kabul from Toronto
+Hello hello :slightly_smiling_face: I'm planning a honeymoon, and I want to go to Kabul from Toronto
 Do you have anything for me leaving on August 28th?
 13 days if possible
 got $3300 to spend
@@ -20611,7 +20612,7 @@ Okay thanks for your help. I will get some feedback from the Mrs. and come back 
 >>>>
 344
 user
-Good afternoon I want to book a vacation for myself, my husband and our daughter. The time frame for our holiday is between August 31st and September 9th
+Good afternoon :slightly_smiling_face: I want to book a vacation for myself, my husband and our daughter. The time frame for our holiday is between August 31st and September 9th
 >>>>
 344
 wizard
@@ -20755,7 +20756,7 @@ k book me the one day honeymoon. how much it cost
 >>>>
 345
 wizard
-Wonderful I will book that for you.
+Wonderful :slightly_smiling_face: I will book that for you.
 >>>>
 345
 user
@@ -21305,7 +21306,7 @@ Done.Book it.
 >>>>
 356
 wizard
-Ok I will go ahead and book that for you!
+Ok :slightly_smiling_face: I will go ahead and book that for you!
 >>>>
 356
 user
@@ -23635,7 +23636,7 @@ hello i am booking from buenos aires to tokyo
 >>>>
 395
 wizard
-Hello I can help with that! Did you have dates in mind?
+Hello :slightly_smiling_face: I can help with that! Did you have dates in mind?
 >>>>
 395
 user
@@ -24700,7 +24701,7 @@ Sold! I'll take this package!
 >>>>
 413
 wizard
-Wonderful Consider it booked. Enjoy your stay and thank you for booking
+Wonderful :slightly_smiling_face: Consider it booked. Enjoy your stay and thank you for booking
 >>>>
 413
 user
@@ -24932,7 +24933,7 @@ Glad to be of service :slightly_smiling_face:
 >>>>
 418
 user
-Hi there I just managed to get my boss to agree to a HUGE vacation time slot!! I am so excited to do some traveling. I'm traveling from Hamburg and I have a few cities I'm thinking of seeing...
+Hi there :slightly_smiling_face: I just managed to get my boss to agree to a HUGE vacation time slot!! I am so excited to do some traveling. I'm traveling from Hamburg and I have a few cities I'm thinking of seeing...
 Do you have packages to Tijuana?
 >>>>
 418
@@ -25221,11 +25222,11 @@ Thank you for your help today, I'm sure I will be back again!
 >>>>
 422
 user
-Hi My cousin is getting married so I'm looking for a place to stay in Milan from August 27th to September 1st I'd be leaving from Punta Cana
+Hi My cousin is getting married so I'm looking for a place to stay in Milan from August 27th to September 1st :slightly_smiling_face: I'd be leaving from Punta Cana
 >>>>
 422
 wizard
-Great Ok, I have El Mundo Hotel available from August 27-31. It’s a four star hotel near the airport with free wifi and breakfast.
+Great :slightly_smiling_face: Ok, I have El Mundo Hotel available from August 27-31. It’s a four star hotel near the airport with free wifi and breakfast.
 >>>>
 422
 user
@@ -25249,7 +25250,7 @@ yes that would be great! I'm going with my husband
 >>>>
 422
 wizard
-Ok In that case I could book the two of you for 4977.33USD
+Ok :slightly_smiling_face: In that case I could book the two of you for 4977.33USD
 >>>>
 422
 user
@@ -25422,7 +25423,7 @@ I'll go to Porto then! The price difference is definitely worth the price differ
 >>>>
 423
 wizard
-Awesome Consider it booked. Enjoy your stay!
+Awesome :slightly_smiling_face: Consider it booked. Enjoy your stay!
 >>>>
 423
 user
@@ -25438,7 +25439,7 @@ Awesome! ya please book it for me!
 >>>>
 423
 wizard
-Ok Enjoy!
+Ok :slightly_smiling_face: Enjoy!
 >>>>
 423
 user
@@ -25681,7 +25682,7 @@ It is only available for that price from August 27 to September 3rd. This specia
 >>>>
 429
 user
-That sounds great i'd like to book this right away please
+That sounds great :slightly_smiling_face: i'd like to book this right away please
 >>>>
 429
 wizard
@@ -25825,7 +25826,7 @@ I work in Sendai and I need to get out of here. I'm willing to blow all my savin
 >>>>
 433
 wizard
-Great idea Where would you like to gO?
+Great idea :slightly_smiling_face: Where would you like to gO?
 >>>>
 433
 user
@@ -25874,7 +25875,7 @@ Ok give me the Santos one then! One extra day of bliss with that one haha
 >>>>
 433
 wizard
-Sure thing Anything else I can help you with today?
+Sure thing :slightly_smiling_face: Anything else I can help you with today?
 >>>>
 433
 user
@@ -25986,7 +25987,7 @@ oh well, next time, book me to Vitoria then and I'll see what's happening there
 >>>>
 435
 wizard
-Great Can I help you with anything else today?
+Great :slightly_smiling_face: Can I help you with anything else today?
 >>>>
 435
 user
@@ -26200,7 +26201,7 @@ That's great! Then i'll go with Zion, it's fancier and somehow a lot cheaper, ca
 >>>>
 440
 wizard
-Great Sounds good! Enjoy
+Great :slightly_smiling_face: Sounds good! Enjoy
 >>>>
 440
 user
@@ -26452,7 +26453,7 @@ Howdy! So how does this work? I'm not too good with technology, I'm more of a pe
 >>>>
 443
 wizard
-That is ok I will guide you through it. I’m here to help you find the best vacation packages to fit your needs. Maybe we can start by you telling me where you are located and where you would like to explore travel options to.
+That is ok :slightly_smiling_face: I will guide you through it. I’m here to help you find the best vacation packages to fit your needs. Maybe we can start by you telling me where you are located and where you would like to explore travel options to.
 >>>>
 443
 user
@@ -26920,7 +26921,7 @@ Ok well tell me more about this one then :slightly_smiling_face:
 >>>>
 449
 wizard
-Sure The hotel is 3.5 stars, called the Scarlet Palms Resort. Guests have given the hotel a 7.15/10 rating and the Scarlet Palms is located near shopping and a park. Your package includes free wifi, free breakfast, and free hotel parking. The total for this vacation package would be $2521.
+Sure :slightly_smiling_face: The hotel is 3.5 stars, called the Scarlet Palms Resort. Guests have given the hotel a 7.15/10 rating and the Scarlet Palms is located near shopping and a park. Your package includes free wifi, free breakfast, and free hotel parking. The total for this vacation package would be $2521.
 >>>>
 449
 user
@@ -26996,7 +26997,7 @@ September 2-15
 >>>>
 450
 user
-That would be perfect! That's my favorite one so far How much is it?
+That would be perfect! That's my favorite one so far :slightly_smiling_face: How much is it?
 >>>>
 450
 wizard
@@ -27008,7 +27009,7 @@ Fantastic, I would prefer to go with economy. Last place I could go to is Fortal
 >>>>
 450
 wizard
-great Shall I book that now?
+great :slightly_smiling_face: Shall I book that now?
 >>>>
 450
 user
@@ -27032,7 +27033,7 @@ Ok good to know, I'll go with that one then!
 >>>>
 451
 user
-hi there, i'm having my dream wedding this Saturday and I want to have a dream honeymoon right after :slightly_smiling_face:
+hi there, i'm having my dream wedding this Saturday and I want to have a dream honeymoon right after :slightly_smiling_face: :slightly_smiling_face:
 >>>>
 451
 wizard
@@ -31834,7 +31835,7 @@ Lovely! Your trip is booked! You will get a confirmation email within the hour. 
 >>>>
 543
 user
-Hello hello Looking to take the family somewhere nice next month. HAve 12400 on hand. How much would it cost to take five children and two adults from London to Belem? For around two weeks
+Hello hello :slightly_smiling_face: Looking to take the family somewhere nice next month. HAve 12400 on hand. How much would it cost to take five children and two adults from London to Belem? For around two weeks
 >>>>
 543
 wizard
@@ -38217,7 +38218,7 @@ Thanks!
 >>>>
 663
 user
-Hey there I’m bringing my wife (2 adults) and 4 kids (6 people in total) on vacation for 8900 dollars
+Hey there :slightly_smiling_face: I’m bringing my wife (2 adults) and 4 kids (6 people in total) on vacation for 8900 dollars
 >>>>
 663
 wizard
@@ -41049,7 +41050,7 @@ Put me down for that, please and thank you!
 >>>>
 706
 wizard
-You’ve got it Economy or Business class flights?
+You’ve got it :slightly_smiling_face: Economy or Business class flights?
 >>>>
 706
 user
@@ -41475,7 +41476,7 @@ That will do. Book it already!!!
 >>>>
 713
 wizard
-Done Thank you for using our services.
+Done :slightly_smiling_face: Thank you for using our services.
 >>>>
 714
 user
@@ -41875,7 +41876,7 @@ Get me the unrated hotel
 >>>>
 720
 wizard
-Great From August 30th to Sept 7th, you will spend 9 days at La Estrella del Mar for a total of $347.36 USD
+Great :slightly_smiling_face: From August 30th to Sept 7th, you will spend 9 days at La Estrella del Mar for a total of $347.36 USD
 >>>>
 720
 user
@@ -41976,7 +41977,7 @@ Toronto to Denver got it?
 >>>>
 723
 wizard
-Sure Dates? Budget? How many in your party?
+Sure :slightly_smiling_face: Dates? Budget? How many in your party?
 >>>>
 723
 user
@@ -42200,7 +42201,7 @@ Oh thank goodness! I had been getting so very worried. Can you please book this 
 >>>>
 727
 wizard
-Absolutely I will send confirmation shortly
+Absolutely :slightly_smiling_face: I will send confirmation shortly
 >>>>
 728
 user
@@ -42494,7 +42495,7 @@ Ok then book me for 7-14 please
 >>>>
 731
 wizard
-You’ve got it Would you like to upgrade to Business class for an extra $ 329 ?
+You’ve got it :slightly_smiling_face: Would you like to upgrade to Business class for an extra $ 329 ?
 >>>>
 731
 user
@@ -42510,7 +42511,7 @@ I'll play it safe and do economy, but thanks for the offer!
 >>>>
 731
 wizard
-Absolutely I will go ahead and book you the economy class ticket
+Absolutely :slightly_smiling_face: I will go ahead and book you the economy class ticket
 >>>>
 731
 user
@@ -43065,7 +43066,7 @@ Yo! I've rounded the crew up and we want to do something huge
 >>>>
 741
 wizard
-OK How many are in your group?
+OK :slightly_smiling_face: How many are in your group?
 >>>>
 741
 user
@@ -45243,7 +45244,7 @@ This is deeply depressing news
 >>>>
 781
 user
-Hello Can you believe it? My psychotic boss finally gave me a few days off! I feel like a thousand pounds have been lifted off my shoulders, and I can't wait to book the perfect trip!
+Hello :slightly_smiling_face: Can you believe it? My psychotic boss finally gave me a few days off! I feel like a thousand pounds have been lifted off my shoulders, and I can't wait to book the perfect trip!
 I live in San Diego, but thinking of going to Busan
 >>>>
 781
@@ -45642,7 +45643,7 @@ Hi
 >>>>
 791
 wizard
-Hey Would you like to book a trip?
+Hey :slightly_smiling_face: Would you like to book a trip?
 >>>>
 791
 user
@@ -45666,7 +45667,7 @@ You're smart!
 >>>>
 791
 wizard
-Great I will get searching for you immediately. Do you have a budget in mind for your trip?
+Great :slightly_smiling_face: I will get searching for you immediately. Do you have a budget in mind for your trip?
 >>>>
 791
 user
@@ -45706,7 +45707,7 @@ Well, I guess this Toronto package ain't too bad...
 >>>>
 791
 wizard
-Would you like me to book it?
+:slightly_smiling_face: Would you like me to book it?
 >>>>
 791
 user
@@ -45750,7 +45751,7 @@ no, no budget
 >>>>
 792
 wizard
-Great I have a 10 day trip to Kochi at a 3.5 star hotel for 4050 dollars. How does that sound?
+Great :slightly_smiling_face: I have a 10 day trip to Kochi at a 3.5 star hotel for 4050 dollars. How does that sound?
 >>>>
 792
 user
@@ -45958,7 +45959,7 @@ I, my wife, and our infant son.
 >>>>
 795
 wizard
-Let me see what I can find Do you have a budget?
+Let me see what I can find :slightly_smiling_face: Do you have a budget?
 >>>>
 795
 user
@@ -45998,7 +45999,7 @@ do you offer flights from san jose to buenos aires?
 >>>>
 796
 wizard
-I sure do For how many people?
+I sure do :slightly_smiling_face: For how many people?
 >>>>
 796
 user
@@ -46518,7 +46519,7 @@ look up Campinas
 >>>>
 802
 wizard
-Thank you for giving me another chance to find you the perfect birthday getaway I can offer you a 3.5 star hotel in the heart of Campinas! It is close to a mall and a cathedral, and has a guest rating of 8.49/10. Does this sound better?
+Thank you for giving me another chance to find you the perfect birthday getaway :slightly_smiling_face: I can offer you a 3.5 star hotel in the heart of Campinas! It is close to a mall and a cathedral, and has a guest rating of 8.49/10. Does this sound better?
 >>>>
 803
 user
@@ -46582,7 +46583,7 @@ great! I'll take this one then.
 >>>>
 803
 wizard
-Sure thing I’ll book that for you. Would you like to fly economy or business class?
+Sure thing :slightly_smiling_face: I’ll book that for you. Would you like to fly economy or business class?
 >>>>
 803
 user
@@ -46646,7 +46647,7 @@ I think I have to go back to Punta Cana. Can you make me feel a little better ab
 >>>>
 804
 wizard
-It does not seem to have any amenities, but at least it's close to the beach where you can get a perfect tan for your shoot I can offer you a business package for a 8 or 9 day stay.
+It does not seem to have any amenities, but at least it's close to the beach where you can get a perfect tan for your shoot :slightly_smiling_face: I can offer you a business package for a 8 or 9 day stay.
 >>>>
 804
 user
@@ -46662,7 +46663,7 @@ user
 >>>>
 804
 wizard
-Okay! You are heading to Punta Cana for 8 days from Sept 7 to 13 You will receive an email confirmation shortly. Happy traveling!
+Okay! You are heading to Punta Cana for 8 days from Sept 7 to 13 :slightly_smiling_face: You will receive an email confirmation shortly. Happy traveling!
 >>>>
 804
 user
@@ -46674,7 +46675,7 @@ Hello! I'm looking for a vacation for me, my wife, and our 2 kids.
 >>>>
 805
 wizard
-I can help with that Where are you leaving from?
+I can help with that :slightly_smiling_face: Where are you leaving from?
 >>>>
 805
 user
@@ -47921,7 +47922,7 @@ I want to find a vacation between September 12th and 18th to San Diego from Calg
 >>>>
 826
 wizard
-Ok, I can help you with that How many travellers?
+Ok, I can help you with that :slightly_smiling_face: How many travellers?
 >>>>
 826
 user
@@ -48081,7 +48082,7 @@ I’ll take it please
 >>>>
 828
 wizard
-You’ve got it Thanks for booking!
+You’ve got it :slightly_smiling_face: Thanks for booking!
 >>>>
 828
 user
@@ -48816,7 +48817,7 @@ near the beach! You got me sold. Book er
 >>>>
 845
 wizard
-Ok Enjoy your trip
+Ok :slightly_smiling_face: Enjoy your trip
 >>>>
 845
 user
@@ -51837,7 +51838,7 @@ I like this one much better. I will reserve it.
 >>>>
 893
 wizard
-Great! Consider it done Anything else I can do for you?
+Great! Consider it done :slightly_smiling_face: Anything else I can do for you?
 >>>>
 894
 user
@@ -53816,7 +53817,7 @@ Hi! I need to check out several destinations with you! Are you able to help me?
 >>>>
 924
 wizard
-Of course What is your point of departure and first potential destination?
+Of course :slightly_smiling_face: What is your point of departure and first potential destination?
 >>>>
 924
 user
@@ -53920,7 +53921,7 @@ I think I'll stick to the 11 day package in Belem at Las Flores, seems like the 
 >>>>
 924
 wizard
-Ok! You’ve got it I’ll send a confirmation email once I straighten everything up.
+Ok! You’ve got it :slightly_smiling_face: I’ll send a confirmation email once I straighten everything up.
 >>>>
 925
 user
@@ -54424,7 +54425,7 @@ Book it, bot!
 >>>>
 936
 wizard
-Consider it done, amigo Enjoy your stay.
+Consider it done, amigo :slightly_smiling_face: Enjoy your stay.
 >>>>
 936
 user
@@ -63568,7 +63569,7 @@ Perfect! Can you book me this trip then?
 >>>>
 1088
 wizard
-Of course! Consider it done Anything else for today?
+Of course! Consider it done :slightly_smiling_face: Anything else for today?
 >>>>
 1088
 user
@@ -63804,7 +63805,7 @@ yes! please!!!
 >>>>
 1092
 wizard
-Consider it done Pack your bags and head to the airport!
+Consider it done :slightly_smiling_face: Pack your bags and head to the airport!
 >>>>
 1092
 user
@@ -64313,7 +64314,7 @@ Yeah i want business class. Hook me up
 >>>>
 1101
 wizard
-Done! You are all booked Anything else for today?
+Done! You are all booked :slightly_smiling_face: Anything else for today?
 >>>>
 1101
 user
@@ -66964,7 +66965,7 @@ Okay let's stick with Punta Cana. I guess we could be a bit flexible with the da
 >>>>
 1139
 wizard
-Great Is there a maximum amount of days you would like to travel?
+Great :slightly_smiling_face: Is there a maximum amount of days you would like to travel?
 >>>>
 1139
 user
@@ -71787,7 +71788,7 @@ I guess if that is all you have in Hiroshima  what choice do we have. Does it at
 >>>>
 1219
 wizard
-Yes, 8.86 out of 10 Shall I book this for you? And for business class?
+Yes, 8.86 out of 10 :slightly_smiling_face: Shall I book this for you? And for business class?
 >>>>
 1219
 user
@@ -72303,7 +72304,7 @@ You know what, I'd prefer to take the kids to the first one. At least they can s
 >>>>
 1228
 wizard
-Great idea Shall I go ahead and book that for you?
+Great idea :slightly_smiling_face: Shall I go ahead and book that for you?
 >>>>
 1228
 user
@@ -72523,7 +72524,7 @@ Ok let's go for it
 >>>>
 1232
 wizard
-Consider it done Enjoy your stay!
+Consider it done :slightly_smiling_face: Enjoy your stay!
 >>>>
 1233
 user
@@ -72864,7 +72865,7 @@ I'll take the one leaving today pls
 >>>>
 1239
 wizard
-Sure thing I will go ahead and book it for you.
+Sure thing :slightly_smiling_face: I will go ahead and book it for you.
 >>>>
 1239
 user
@@ -73572,7 +73573,7 @@ Sure!
 >>>>
 1250
 wizard
-Great Enjoy your trip
+Great :slightly_smiling_face: Enjoy your trip
 >>>>
 1250
 user
@@ -74320,7 +74321,7 @@ I want to throw my parents on a plane and get them out of my hair
 >>>>
 1263
 wizard
-Sure, I can help book a trip for 2 adults Where is the departure point, and what is the budget?
+Sure, I can help book a trip for 2 adults :slightly_smiling_face: Where is the departure point, and what is the budget?
 >>>>
 1263
 user
@@ -75078,7 +75079,7 @@ Yeah of course!
 >>>>
 1276
 wizard
-Great All booked!
+Great :slightly_smiling_face: All booked!
 >>>>
 1276
 user
@@ -77321,7 +77322,7 @@ I'd like to go to Washington.
 >>>>
 1318
 wizard
-Sure thing Where would you like to leave from?
+Sure thing :slightly_smiling_face: Where would you like to leave from?
 >>>>
 1318
 user
@@ -77957,7 +77958,7 @@ Hey, never done this before, but I'll give it a try! I finally have some time of
 >>>>
 1329
 wizard
-OK I’d love to help you. Where are you located and where would you like to go?
+OK :slightly_smiling_face: I’d love to help you. Where are you located and where would you like to go?
 >>>>
 1329
 user
@@ -78449,7 +78450,7 @@ Hi there, I NEED to go to Miami!
 >>>>
 1336
 wizard
-Ok Where from?
+Ok :slightly_smiling_face: Where from?
 >>>>
 1336
 user
@@ -78737,7 +78738,7 @@ Hey I need to get out of here, just need some space to myself!
 >>>>
 1341
 wizard
-Sure Where are you looking to get out of?
+Sure :slightly_smiling_face: Where are you looking to get out of?
 >>>>
 1341
 user
@@ -79018,7 +79019,7 @@ No, I think the 3 star hotel in Alexandria sounds pretty good, thank you. Could 
 >>>>
 1345
 wizard
-Yup! Consider it done Hope you have a good trip!
+Yup! Consider it done :slightly_smiling_face: Hope you have a good trip!
 >>>>
 1345
 user
@@ -79994,7 +79995,7 @@ hey, we're having a huge family trip. Think you can help us?
 >>>>
 1361
 wizard
-Of course How many travellers?
+Of course :slightly_smiling_face: How many travellers?
 >>>>
 1361
 user
