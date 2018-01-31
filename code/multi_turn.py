@@ -1,36 +1,85 @@
 # -*- coding: UTF-8 -*-
 import os
+import sys
+import keras
 import pickle
 import numpy as np
-from copy import deepcopy
+import configparser
+import matplotlib.pyplot as plt
 from gensim.models import KeyedVectors
 
 from keras.utils import plot_model
-from keras.models import Model, load_model, Sequential
+from keras.optimizers import RMSprop
+from keras.models import Model, load_model
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
-from keras.layers import Input, Embedding, SimpleRNN, Dense, LSTM
+from keras.layers import Input, Embedding, Dense, LSTM
 from keras.layers import Add, Dot, Concatenate, Multiply
 from keras.layers.core import Lambda, Activation
-from keras.optimizers import RMSprop
-from code.show_loss import LossHistory
 
-np.random.seed(1024)  # for reproducibility
+np.random.seed(1024)
 
-BASE_DIR = 'D:/file/intent_model/'
-TEXT_DATA_DIR = BASE_DIR + 'SLU/data/temp/'
-MINI_VECTOR = TEXT_DATA_DIR + 'glove_min_model.plk'
-MAX_SEQUENCE_LENGTH = 100  # 最长的句子长度
-MAX_NB_WORDS = 1200  # 最大的词汇量
-MAX_NB_LABELS = 17  # 标签的数量 需要+1 因为没有0标签
-MAX_MEMORY = 5
+cf = configparser.ConfigParser()
+cf.read("conf.ini")
+TEXT_DATA_DIR = cf.get('path', 'TEXT_DATA_DIR')
+print(TEXT_DATA_DIR)
+MAX_MEMORY = cf.getint('path', 'MAX_MEMORY')
+MAX_NB_WORDS = cf.getint('path', 'MAX_NB_WORDS')  # 最大的词汇量
+MAX_NB_LABELS = cf.getint('path', 'MAX_NB_LABELS')  # 标签的数量 需要+1 因为没有0标签
+MAX_SEQUENCE_LENGTH = cf.getint('path', 'MAX_SEQUENCE_LENGTH')  # 最长的句子长度
 
-EMBEDDING_DIM = 50
-TYPE = 'glove'
-VECTOR_DIR = BASE_DIR + 'word_embedding/glove.6B/glove.6B.50d.txt'
+TYPE = cf.get('path', 'TYPE')
+EMBEDDING_DIM = cf.getint('path', 'EMBEDDING_DIM')
+VECTOR_DIR = cf.get('path', 'VECTOR_DIR')
+MINI_VECTOR = cf.get('path', 'MINI_VECTOR')
 
 
-# VECTOR_DIR = BASE_DIR + 'word_embedding/GoogleNews-vectors-negative300.bin'
+# 写一个LossHistory类，保存loss和acc
+class LossHistory(keras.callbacks.Callback):
+    def on_train_begin(self, logs={}):
+        self.losses = {'batch': [], 'epoch': []}
+        self.accuracy = {'batch': [], 'epoch': []}
+        self.val_loss = {'batch': [], 'epoch': []}
+        self.val_acc = {'batch': [], 'epoch': []}
+
+    def on_batch_end(self, batch, logs={}):
+        self.losses['batch'].append(logs.get('loss'))
+        self.accuracy['batch'].append(logs.get('binary_accuracy'))
+        self.val_loss['batch'].append(logs.get('val_loss'))
+        self.val_acc['batch'].append(logs.get('val_binary_accuracy'))
+
+    def on_epoch_end(self, batch, logs={}):
+        self.losses['epoch'].append(logs.get('loss'))
+        self.accuracy['epoch'].append(logs.get('binary_accuracy'))
+        self.val_loss['epoch'].append(logs.get('val_loss'))
+        self.val_acc['epoch'].append(logs.get('val_binary_accuracy'))
+
+    def loss_plot(self, loss_type, pic_path=''):
+        iters = range(len(self.losses[loss_type]))
+        plt.figure()
+        # acc
+        plt.subplot(211)
+        plt.plot(iters, self.accuracy[loss_type], 'r', label='train acc')
+        if loss_type == 'epoch':
+            # val_acc
+            plt.plot(iters, self.val_acc[loss_type], 'b', label='val acc')
+        plt.grid(True)
+        plt.xlabel(loss_type)
+        plt.ylabel('acc')
+        plt.legend(loc="upper right")
+        # loss
+        plt.subplot(212)
+        plt.plot(iters, self.losses[loss_type], 'g', label='train loss')
+        if loss_type == 'epoch':
+            # val_loss
+            plt.plot(iters, self.val_loss[loss_type], 'k', label='val loss')
+        plt.grid(True)
+        plt.xlabel(loss_type)
+        plt.ylabel('loss')
+        plt.legend(loc="upper right")
+        if pic_path == '':
+            pic_path = 'loss.png'
+        plt.savefig(pic_path)
 
 
 class V2C(object):
@@ -165,7 +214,7 @@ class Dateset(object):
         return data
 
     # 生成embedding的索引embedding_matrix
-    def embedding(self, w2v_file, update=False):
+    def embedding(self, update=False):
         # 加载词向量模型
         word_index = self.tokenizer_t.word_index
         if update:
@@ -183,11 +232,11 @@ class Dateset(object):
                         embedding_matrix[i] = np.asarray(temp, dtype='float32')
                 except:
                     pass
-            f = open(w2v_file, 'wb')
+            f = open(MINI_VECTOR, 'wb')
             pickle.dump(embedding_matrix, f)
             f.close()
         else:
-            f = open(w2v_file, 'rb')
+            f = open(MINI_VECTOR, 'rb')
             embedding_matrix = pickle.load(f)
             f.close()
         return embedding_matrix
@@ -424,9 +473,9 @@ class Keras_MAC(object):
             sum_TP += TP
             sum_p += (FP + TP)
             sum_f += (FN + TP)
-        print(sum_TP / (sum_p+0.1))
-        print(sum_TP / (sum_f+0.1))
-        print(sum_0/(valid_y.shape[1] * valid_y.shape[0]))
+        print('precision', sum_TP / (sum_p+0.1))
+        print('recall', sum_TP / (sum_f+0.1))
+        # print(sum_0/(valid_y.shape[1] * valid_y.shape[0]))
         del model
 
     def test_rnn(self, valid_data):
@@ -461,3 +510,26 @@ class Keras_MAC(object):
     def vis_rnn(self):
         model = load_model(self.new_model)
         plot_model(model, to_file=TEXT_DATA_DIR+'model.png', show_shapes=True)
+
+
+if __name__ == '__main__':
+    filename1 = sys.argv[1]
+    filename2 = sys.argv[2]
+    if sys.argv[3] == 'train':
+        dataset = Dateset(text_path=filename1)
+        print(dataset.tokenizer_l.word_index)
+        train_data_g = dataset.load_data(text_file=filename1)
+        embedding_matrix = dataset.embedding(update=False)
+        keras_mac = Keras_MAC()
+        keras_mac.build_model(train_data_g, embedding_matrix)
+        keras_mac.valid_rnn(train_data_g, dtype='train')
+    if sys.argv[1] == 'valid':
+        dataset = Dateset(text_path=filename1)
+        valid_data_g = dataset.load_data(text_file=filename2)
+        keras_mac = Keras_MAC()
+        keras_mac.valid_rnn(valid_data_g, dtype='')
+    if sys.argv[1] == 'test':
+        dataset = Dateset(text_path=filename1)
+        valid_data_g = dataset.load_data(text_file=filename2)
+        keras_mac = Keras_MAC()
+        keras_mac.valid_rnn(valid_data_g, dtype='')
