@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="022d9f16-385b-4725-9222-0d2e504f36a2" name="Default" comment="remove test.py">
+    <list default="true" id="022d9f16-385b-4725-9222-0d2e504f36a2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="multi_turn.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="multi_turn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/multi_turn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="528" column="31" lean-forward="true" selection-start-line="528" selection-start-column="31" selection-end-line="528" selection-end-column="31" />
+            <state relative-caret-position="209">
+              <caret line="523" column="61" lean-forward="true" selection-start-line="523" selection-start-column="61" selection-end-line="523" selection-end-column="61" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
                 <element signature="e#1205#2969#0" expanded="false" />
@@ -29,6 +30,16 @@
                 <element signature="e#18957#20105#0" expanded="false" />
                 <element signature="e#20138#20251#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,8 +98,8 @@
         <option value="$PROJECT_DIR$/code/show_loss.py" />
         <option value="$PROJECT_DIR$/code/conf.ini" />
         <option value="$PROJECT_DIR$/code/multi_turn.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/code/test.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -342,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517405512662</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="remove test.py">
+      <created>1517405613238</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1517405613238</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -357,7 +375,7 @@
   <component name="ToolWindowManager">
     <frame x="311" y="36" width="1379" height="985" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20924944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20924944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.4920394" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20636792" sideWeight="0.3995451" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -707,14 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/single_turn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -732,8 +742,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/multi_turn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="528" column="31" lean-forward="true" selection-start-line="528" selection-start-column="31" selection-end-line="528" selection-end-column="31" />
+        <state relative-caret-position="209">
+          <caret line="523" column="61" lean-forward="true" selection-start-line="523" selection-start-column="61" selection-end-line="523" selection-end-column="61" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
             <element signature="e#1205#2969#0" expanded="false" />
@@ -745,6 +755,14 @@
             <element signature="e#18957#20105#0" expanded="false" />
             <element signature="e#20138#20251#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
