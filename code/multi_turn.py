@@ -17,12 +17,11 @@ from keras.layers import Input, Embedding, Dense, LSTM
 from keras.layers import Add, Dot, Concatenate, Multiply
 from keras.layers.core import Lambda, Activation
 
-np.random.seed(1024)
+np.random.seed(0)
 
 cf = configparser.ConfigParser()
 cf.read("conf.ini")
 TEXT_DATA_DIR = cf.get('path', 'TEXT_DATA_DIR')
-print(TEXT_DATA_DIR)
 MAX_MEMORY = cf.getint('path', 'MAX_MEMORY')
 MAX_NB_WORDS = cf.getint('path', 'MAX_NB_WORDS')  # 最大的词汇量
 MAX_NB_LABELS = cf.getint('path', 'MAX_NB_LABELS')  # 标签的数量 需要+1 因为没有0标签
@@ -247,11 +246,11 @@ class Keras_MAC(object):
         super(Keras_MAC, self).__init__()
         self.valid_split = 0.2
         self.batch_size = 64
-        self.nb_epoch = 100
-        self.lr = 0.001
-        self.loss_path = TEXT_DATA_DIR + 'loss_100.png'
-        self.old_model = ""
-        self.new_model = TEXT_DATA_DIR + 'model_100.h5'
+        self.nb_epoch = 1000
+        self.lr = 0.0001
+        self.loss_path = TEXT_DATA_DIR + 'loss_gate_1000.png'
+        self.old_model = ''
+        self.new_model = TEXT_DATA_DIR + 'model_gate_1000.h5'
 
     def build_model(self, train_data, embedding_matrix):
         print('Build model...')
@@ -322,8 +321,9 @@ class Keras_MAC(object):
         a = Dense(1, activation='sigmoid', name='gate')(c)
 
         hh = Multiply()([a, h])
-        added = Concatenate(axis=1)([hh, rnn_l, aux_input6])
-        output2 = Dense(MAX_NB_LABELS, activation='sigmoid', name='classifier')(added)
+        added = Add()([hh, rnn_l])
+        output1 = Concatenate(axis=1)([added, aux_input6])
+        output2 = Dense(MAX_NB_LABELS, activation='sigmoid', name='classifier')(output1)
 
         model = Model(inputs=[main_input,
                               aux_input1,
@@ -397,7 +397,7 @@ class Keras_MAC(object):
                                            model.get_layer('aux_input5').input,
                                            model.get_layer('aux_input6').input
                                            ],
-                                          model.get_layer('ctrl').get_output_at(0))
+                                          model.get_layer('gate').get_output_at(0))
 
         while True:
             i = int(input('i>>>>>'))
@@ -421,8 +421,8 @@ class Keras_MAC(object):
                                                                       valid_u[index]
                                                                       ])
             for i in range(len(index)):
-                print('5:', intermediate_output1[i])
-                print('a:', intermediate_output2[i])
+                print('a:', intermediate_output1[i])
+                print('g:', intermediate_output2[i])
 
     def valid_rnn(self, valid_data, dtype=''):
         model = load_model(self.new_model)
@@ -513,23 +513,39 @@ class Keras_MAC(object):
 
 
 if __name__ == '__main__':
-    filename1 = sys.argv[1]
-    filename2 = sys.argv[2]
-    if sys.argv[3] == 'train':
-        dataset = Dateset(text_path=filename1)
-        print(dataset.tokenizer_l.word_index)
-        train_data_g = dataset.load_data(text_file=filename1)
-        embedding_matrix = dataset.embedding(update=False)
-        keras_mac = Keras_MAC()
-        keras_mac.build_model(train_data_g, embedding_matrix)
-        keras_mac.valid_rnn(train_data_g, dtype='train')
-    if sys.argv[1] == 'valid':
-        dataset = Dateset(text_path=filename1)
-        valid_data_g = dataset.load_data(text_file=filename2)
-        keras_mac = Keras_MAC()
-        keras_mac.valid_rnn(valid_data_g, dtype='')
-    if sys.argv[1] == 'test':
-        dataset = Dateset(text_path=filename1)
-        valid_data_g = dataset.load_data(text_file=filename2)
-        keras_mac = Keras_MAC()
-        keras_mac.valid_rnn(valid_data_g, dtype='')
+    # import time
+    # time.sleep(7200)
+    filename1 = 'D:/file/intent_model/SLU/data/temp/train.txt'
+    filename2 = 'D:/file/intent_model/SLU/data/temp/valid.txt'
+    dataset = Dateset(text_path=filename1)
+    print(dataset.tokenizer_l.word_index)
+    train_data_g = dataset.load_data(text_file=filename1)
+    # valid_data_g = dataset.load_data(text_file=filename2)
+    embedding_matrix = dataset.embedding(update=False)
+    keras_mac = Keras_MAC()
+    # keras_mac.build_model(train_data_g, embedding_matrix)
+    # keras_mac.valid_rnn(train_data_g, dtype='train')
+    keras_mac.valid_rnn(train_data_g, dtype='valid')
+    # keras_mac.test_rnn(train_data_g)
+    # keras_mac.p_rnn(train_data_g)
+
+#     filename1 = sys.argv[1]
+#     filename2 = sys.argv[2]
+#     if sys.argv[3] == 'train':
+#         dataset = Dateset(text_path=filename1)
+#         print(dataset.tokenizer_l.word_index)
+#         train_data_g = dataset.load_data(text_file=filename1)
+#         embedding_matrix = dataset.embedding(update=False)
+#         keras_mac = Keras_MAC()
+#         keras_mac.build_model(train_data_g, embedding_matrix)
+#         keras_mac.valid_rnn(train_data_g, dtype='train')
+#     if sys.argv[1] == 'valid':
+#         dataset = Dateset(text_path=filename1)
+#         valid_data_g = dataset.load_data(text_file=filename2)
+#         keras_mac = Keras_MAC()
+#         keras_mac.valid_rnn(valid_data_g, dtype='')
+#     if sys.argv[1] == 'test':
+#         dataset = Dateset(text_path=filename1)
+#         valid_data_g = dataset.load_data(text_file=filename2)
+#         keras_mac = Keras_MAC()
+#         keras_mac.valid_rnn(valid_data_g, dtype='')
